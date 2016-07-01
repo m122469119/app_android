@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="3dp" >
+
+    <ImageView
+        android:id="@+id/notificationImage"
+        android:layout_width="@dimen/common_measure_65dp"
+        android:layout_height="@dimen/common_measure_65dp"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/ic_launcher" />
+
+    <RelativeLayout
+        android:id="@+id/notificationlay"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/notificationImage" >
+
+        <TextView
+            android:id="@+id/notificationTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="6dp"
+            android:text="正在下载"
+            android:textSize="@dimen/common_measure_20dp" />
+
+        <TextView
+            android:id="@+id/notificationPercent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/notificationTitle"
+            android:layout_marginLeft="10dp"
+            android:text="0%"
+            android:textSize="@dimen/common_measure_18dp" />
+
+        <TextView
+            android:id="@+id/notificationSpeed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/notificationTitle"
+            android:text="12kb/s"
+            android:textSize="@dimen/common_measure_18dp" />
+
+        <ProgressBar
+            android:id="@+id/notificationProgress"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="fill_parent"
+            android:progressDrawable="@drawable/progressbar_drawable"
+            android:layout_height="5dp"
+            android:layout_below="@id/notificationPercent"
+            android:paddingLeft="6dp"
+            android:paddingRight="3dp"
+            android:paddingTop="2dp" />
+    </RelativeLayout>
+
+</RelativeLayout>

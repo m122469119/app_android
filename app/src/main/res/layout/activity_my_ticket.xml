@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:id="@+id/content"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+
+        <com.dym.film.views.MySwipeRefreshLayout
+            android:id="@+id/refreshLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <com.dym.film.ui.LoadMoreListView
+                android:id="@+id/listMyTicket"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@color/main_bg_color"
+                android:dividerHeight="1dp"
+                >
+            </com.dym.film.ui.LoadMoreListView>
+
+
+        </com.dym.film.views.MySwipeRefreshLayout>
+
+        <LinearLayout
+            android:id="@+id/layNoTicket"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="invisible">
+            <ImageView
+                android:layout_marginTop="100dp"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:src="@drawable/ic_no_ticket"
+                android:scaleType="fitCenter"
+                />
+            <com.dym.film.views.CustomTypefaceTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:textColor="#525252"
+                android:layout_marginTop="20dp"
+                android:text="暂无兑换劵"/>
+
+        </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical">
+    <include
+        layout="@layout/layout_custom_status_bar" />
+    <com.dym.film.views.DragTopLayout
+        android:id="@+id/price_drag_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/black"
+            android:gravity="center"
+            android:onClick="doClick"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_measure_346dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/price_image_big_bg"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/ic_loading" />
+
+                    <ImageView
+                        android:id="@+id/price_image_big_bg1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="fitXY" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/price_title_relative"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize">
+
+                    <LinearLayout
+                        android:id="@+id/price_iv_back"
+                        android:layout_width="?attr/actionBarSize"
+                        android:layout_height="?attr/actionBarSize"
+                        android:gravity="center"
+                        android:onClick="doClick">
+
+                        <ImageView
+                            android:layout_width="@dimen/common_measure_30dp"
+                            android:layout_height="@dimen/common_measure_30dp"
+                            android:layout_centerVertical="true"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/btn_titlebar_back_selector" />
+                    </LinearLayout>
+
+                    <com.dym.film.views.CustomTypefaceTextView
+                        android:id="@+id/price_title_name_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:ellipsize="end"
+                        android:maxLength="10"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/common_measure_24dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/price_title_relative">
+
+                    <com.dym.film.views.FlingOneGallery
+                        android:id="@+id/price_gallery"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/common_measure_214dp"
+                        android:layout_centerVertical="true"
+
+                        android:spacing="@dimen/common_measure_44dp" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_measure_20dp" />
+
+            <LinearLayout
+                android:id="@+id/price_liner_place"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_measure_120dp"
+                android:background="@color/price_linerlayout_backgroudcolor"
+                android:onClick="doClick"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/price_line_color" />
+
+                    <ImageView
+                        android:id="@+id/price_iv_right"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center"
+                        android:onClick="doClick"
+                        android:paddingLeft="@dimen/common_measure_13dp"
+                        android:paddingRight="@dimen/common_measure_13dp"
+                        android:src="@drawable/ic_my_turn_right" />
+
+                    <com.dym.film.views.CustomTypefaceTextView
+                        android:id="@+id/price_tv_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/common_measure_17dp"
+                        android:layout_toLeftOf="@id/price_iv_right"
+                        android:text="万达国际影城"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/common_measure_20dp" />
+
+                    <com.dym.film.views.CustomTypefaceTextView
+                        android:id="@+id/price_tv_place"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/price_tv_name"
+                        android:layout_marginBottom="@dimen/common_measure_17dp"
+                        android:layout_marginLeft="@dimen/common_measure_17dp"
+                        android:layout_toLeftOf="@id/price_iv_right"
+                        android:ellipsize="end"
+                        android:lineSpacingExtra="1.5dp"
+                        android:maxLines="2"
+                        android:text=""
+                        android:textColor="@color/text_color_gray"
+                        android:textSize="@dimen/common_measure_16dp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/price_line_color" />
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_measure_20dp" />
+
+            <include layout="@layout/voucher_layout_item" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_measure_20dp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <include layout="@layout/layout_price_fragment" />
+            <LinearLayout
+                android:id="@+id/price_no_data_linear1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone">
+                <include layout="@layout/layout_load_no_data"/>
+            </LinearLayout>
+            <View
+                android:id="@+id/activity_price_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                />
+        </RelativeLayout>
+    </com.dym.film.views.DragTopLayout>
+</LinearLayout>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.dym.film.views.MySwipeRefreshLayout
+            android:id="@+id/refreshLayout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <com.dym.film.views.MyScrollView
+                android:id="@+id/scrollView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+                <include layout="@layout/layout_film_detail"/>
+            </com.dym.film.views.MyScrollView>
+
+        </com.dym.film.views.MySwipeRefreshLayout>
+
+        <LinearLayout
+            android:id="@+id/layBottomBar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:visibility="gone"
+            android:orientation="horizontal">
+
+            <com.dym.film.views.CustomTypefaceTextView
+                android:id="@+id/btnBuyTicket"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:background="#90b10b0b"
+                android:clickable="true"
+                android:gravity="center"
+                android:onClick="doClick"
+                android:text="比价购票"
+                android:textColor="#ffffff"/>
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="@color/border_color"/>
+
+            <com.dym.film.views.CustomTypefaceTextView
+                android:id="@+id/btnShareTicket"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:background="#90b10b0b"
+                android:clickable="true"
+                android:gravity="center"
+                android:onClick="doClick"
+                android:text="我要晒票"
+                android:textColor="#ffffff"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/layTitle"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#00000000"
+        >
+
+        <com.dym.film.views.CustomTypefaceTextView
+            android:id="@+id/tvTitleFilmName"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0"
+            android:background="@color/main_title_color"
+            android:clickable="true"
+            android:gravity="center"
+            android:text=""
+            android:textColor="#ffffff"
+            android:textSize="18sp"/>
+
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@null"
+            android:onClick="doClick"
+            android:padding="15dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/btn_titlebar_back_selector"/>
+
+        <ImageButton
+            android:id="@+id/btnLike"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:background="@null"
+            android:onClick="doClick"
+            android:padding="15dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/btn_following_selector"/>
+    </RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/common_measure_70dp" android:layout_height="@dimen/common_measure_70dp"
+    android:gravity="center"
+    android:orientation="vertical"
+        android:background="@drawable/bg_btn_grey_price_date"
+    android:layout_margin="6dp">
+    <com.dym.film.views.CustomTypefaceTextView
+        android:id="@+id/price_number_fragment_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="12.17"
+        android:textColor="@color/item_text_gray_color"
+        android:textSize="@dimen/common_measure_28dp"
+        android:layout_alignParentRight="true"
+        app:customTypeface="number"
+        android:textStyle="bold"/>
+    <com.dym.film.views.CustomTypefaceTextView
+        android:id="@+id/price_week_fragment_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="今日"
+        android:textColor="@color/item_text_gray_color"
+        android:textSize="@dimen/common_measure_22dp"
+        android:layout_marginTop="@dimen/common_measure_13dp"
+        />
+</LinearLayout>

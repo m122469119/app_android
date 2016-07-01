@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="75dp"
+             android:background="#2d2d2d"
+             android:padding="2dp">
+
+    <ImageView
+        android:id="@+id/imgFilmSharedTicket"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:maxHeight="75dp"
+        android:maxWidth="100dp"
+        android:background="@drawable/ic_default_my_shared_ticket"
+        android:src="@null"/>
+
+    <View
+        android:id="@+id/viewFilmLike"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_gravity="bottom|right"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/ic_is_worth_white"
+        />
+</FrameLayout>

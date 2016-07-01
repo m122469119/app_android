@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg_color">
+
+    <!--<com.dym.film.views.StretchedListView-->
+    <!--android:id="@+id/price_stretch_listview"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content">-->
+
+    <!--</com.dym.film.views.StretchedListView>-->
+    <RelativeLayout
+        android:id="@+id/price_fragment_loading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <include layout="@layout/dialog_progress_wheel" />
+    </RelativeLayout>
+
+    <com.dym.film.views.LoadMoreRecyclerView
+        android:id="@+id/price_stretch_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </com.dym.film.views.LoadMoreRecyclerView>
+    <LinearLayout
+        android:id="@+id/price_no_data_linear"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+        <include layout="@layout/layout_load_no_data"/>
+    </LinearLayout>
+
+</FrameLayout>

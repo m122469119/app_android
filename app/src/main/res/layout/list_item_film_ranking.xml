@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    >
+    <FrameLayout
+        android:id="@+id/layFilmCover"
+        android:layout_width="75dp"
+        android:layout_height="110dp"
+        android:background="#2d2d2d"
+        android:layout_margin="10dp"
+        android:padding="2dp">
+
+        <ImageView
+            android:id="@+id/imgFilmCover"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_default_loading_img"/>
+
+        <View
+            android:id="@+id/viewVideoPlay"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:visibility="visible"
+            android:background="@drawable/ic_play_film_detail"/>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingRight="5dp"
+        android:orientation="vertical">
+        <com.dym.film.views.CustomTypefaceTextView
+            android:id="@+id/tvFilmName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="精灵旅社2"
+            android:singleLine="true"
+            android:textColor="#ffffff"
+            android:textSize="16sp"/>
+
+        <com.dym.film.views.CustomTypefaceTextView
+            android:id="@+id/tvFilmDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="中国大陆/2015.09.22上映"
+            android:singleLine="true"
+            android:textColor="@color/item_text_gray_color"
+            android:textSize="14sp"/>
+
+        <com.dym.film.views.CustomTypefaceTextView
+            android:id="@+id/tvFilmDirector"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="导演：冯小刚"
+            android:singleLine="true"
+            android:textColor="@color/item_text_gray_color"
+            android:textSize="14sp"/>
+
+        <com.dym.film.views.CustomTypefaceTextView
+            android:id="@+id/tvFilmActor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="主演：李小刚"
+            android:layout_marginBottom="5dp"
+            android:singleLine="true"
+            android:textColor="@color/item_text_gray_color"
+            android:textSize="14sp"/>
+        <com.dym.film.views.CustomTypefaceTextView
+            android:id="@+id/tvFilmIndex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="银幕54% 票根54%"
+            android:textColor="@color/item_text_gray_color"
+            android:singleLine="true"
+            android:textSize="14sp"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_marginRight="5dp"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/tvFlag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:includeFontPadding="false"
+            android:text=""/>
+        <com.dym.film.views.CustomTypefaceTextView
+            android:id="@+id/tvRankingIndex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:customTypeface="number"
+            android:layout_alignBaseline="@+id/tvFlag"
+            android:textColor="#70b10b0b"
+            android:text="1"
+            android:textSize="80sp"
+            android:layout_marginBottom="-1dp"
+            android:includeFontPadding="false"
+            />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Author: xoracle ( Liang Ke Jin )
+Date: 2015/11/12
+-->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:paddingLeft="5dp"
+    android:minHeight="49dp">
+
+    <com.dym.film.views.CustomTypefaceTextView
+        android:id="@+id/movieTag"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:textColor="#868686"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="小王子"
+        android:gravity="center"
+        android:background="@drawable/bg_shared_ticket_tag_shape"
+        android:textSize="14sp"
+        android:layout_gravity="center"/>
+</LinearLayout>

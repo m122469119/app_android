@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="@dimen/common_measure_67dp"
+    android:id="@+id/price_fragment_src_relative"
+    android:background="@drawable/bg_btn_price_place_pressed_selector">
+
+    <ImageView
+        android:id="@+id/price_slider_item_iv"
+        android:layout_width="@dimen/common_measure_41dp"
+        android:layout_height="@dimen/common_measure_41dp"
+        android:layout_marginLeft="@dimen/common_measure_14dp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_launcher"/>
+
+    <LinearLayout
+        android:id="@+id/price_slider_item_linear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/price_slider_item_iv"
+        android:layout_marginLeft="@dimen/common_measure_14dp"
+        android:layout_centerVertical="true"
+        android:orientation="vertical">
+    <com.dym.film.views.CustomTypefaceTextView
+        android:id="@+id/price_slider_item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="格拉瓦"
+        android:textColor="@color/white"
+        android:textSize="@dimen/common_measure_19dp"
+        />
+    <com.dym.film.views.CustomTypefaceTextView
+        android:id="@+id/price_slider_item_name_install"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="已安装"
+        android:textColor="@color/item_text_gray_color"
+        android:layout_marginTop="5dp"
+        android:textSize="@dimen/common_measure_15dp"
+        />
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/price_slider_item_iv_alias"
+        android:layout_width="@dimen/common_measure_40dp"
+        android:layout_height="@dimen/common_measure_36dp"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/price_slider_item_iv_install"
+        android:scaleType="centerInside"
+         />
+    <com.dym.film.views.CustomTypefaceTextView
+        android:layout_toLeftOf="@id/price_slider_item_iv_alias"
+        android:id="@+id/price_slider_item_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="50.6"
+        android:textColor="@color/white"
+        android:textSize="@dimen/common_measure_40dp"
+        app:customTypeface="number"
+        android:layout_marginRight="@dimen/common_measure_5dp"
+        android:layout_centerVertical="true"
+        android:textStyle="bold"/>
+    <com.dym.film.views.CustomTypefaceTextView
+        android:id="@+id/price_slider_item_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="￥"
+        android:textColor="@color/white"
+        android:layout_centerVertical="true"
+        android:layout_alignBaseline="@id/price_slider_item_number"
+        android:layout_toLeftOf="@id/price_slider_item_number"
+        android:layout_marginRight="@dimen/common_measure_8dp"
+        android:textSize="@dimen/common_measure_22dp" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/price_line_color"
+        />
+
+</RelativeLayout>

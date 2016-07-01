@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/davis/AndroidStudioProjects/app_android/app/libs/ShareSDK-Core-2.6.4.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="7bb32fc69b3520f10333fcc5cdd78a4495761a64">
+        <dex dex="/Users/davis/AndroidStudioProjects/app_android/app/build/intermediates/pre-dexed/anzhi/debug/ShareSDK-Core-2.6.4_a55b4b316bc944dfd935ef94272944017b81e6ae.jar" />
+    </item>
+    <item
+        jar="/Users/davis/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/23.1.1/support-annotations-23.1.1.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="8d680ba5a623724d1fb0e81c36a790f023a6cede">
+        <dex dex="/Users/davis/AndroidStudioProjects/app_android/app/build/intermediates/pre-dexed/anzhi/debug/support-annotations-23.1.1_397068706ad908d942328aeaa0b5c6e367cf911d.jar" />
+    </item>
+    <item
+        jar="/Users/davis/AndroidStudioProjects/app_android/app/build/intermediates/exploded-aar/com.android.support/design/22.2.1/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="1821601ddbec5ff125653097812823388700af74">
+        <dex dex="/Users/davis/AndroidStudioProjects/app_android/app/build/intermediates/pre-dexed/anzhi/debug/com.android.support-design-22.2.1_4643ebd277fc4d86c8d8f72864c2f7b2a10431f6.jar" />
+    </item>
+    <item
+        jar="/Users/davis/AndroidStudioProjects/app_android/app/libs/Qcloud-wup-1.0.0-SNAPSHOT.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="934e220d321b27272ff107393ca45b56b5362fe4">
+        <dex dex="/Users/davis/AndroidStudioProjects/app_android/app/build/intermediates/pre-dexed/anzhi/debug/Qcloud-wup-1.0.0-SNAPSHOT_1a91b5801a6aee73db4a07112e6af9afdfd3a785.jar" />
+    </item>
+    <item
+        jar="/Users/davis/.gradle/caches/modules-2/files-2.1/de.greenrobot/greendao/2.1.0/9414c1d4578673dac83a23119009624fd695726d/greendao-2.1.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="9414c1d4578673dac83a23119009624fd695726d">
+        <dex dex="/Users/davis/AndroidStudioProjects/app_android/app/build/intermediates/pre-dexed/anzhi/debug/greendao-2.1.0_b9d820136c57f6c6d38a4016d9409c7dee4e9627.jar" />
+    </item>
+    <item
+        jar="/Users/davis/AndroidStudioProjects/app_android/app/build/intermediates/exploded-aar/com.bigkoo/convenientbanner/2.0.1/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="8cca251959a8e104486da56e867e4a182cb147f6">
+        <dex dex="/Users/davis/AndroidStudioProjects/app_android/app/build/intermediates/pre-dexed/anzhi/debug/com.bigkoo-convenientbanner-2.0.1_847c64c803a7925946fe58194de8eab01277f1d3.jar" />
+    </item>
+    <item
+        jar="/Users/davis/AndroidStudioProjects/app_android/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.1.1/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="09c5e804bc67fc0580360043dff067df574a60d4">
+        <dex dex="/Users/davis/AndroidStudioProjects/app_android/app/build/intermediates/pre-dexed/anzhi/debug/com.android.support-recyclerview-v7-23.1.1_13ba78f0371690f87de8b4798f60878fdb6e8f73.jar" />
+    </item>
+    <item
+        jar="/Users/davis/AndroidStudioProjects/app_android/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/22.2.1/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="e1fa5e1123997a55e3ed65b44892993ff4b58cfe">
+        <dex dex="/Users/davis/AndroidStudioProjects/app_android/app/build/intermediates/pre-dexed/anzhi/debug/com.android.support-cardview-v7-22.2.1_f145ee30ae891e2fcf3fedc3e6ff884629d5ef87.jar" />
+    </item>
+    <item
+        jar="/Users/davis/AndroidStudioProjects/app_android/app/libs/MobCommons.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="86052ea3c2fcfa2f2d25d71ae34ab20b8c2dca9a">
+        <dex dex="/Users/davis/AndroidStudioProjects/app_android/app/build/intermediates/pre-dexed/anzhi/debug/MobCommons_6f57aa27989a7713dd5575e3a309bdb849a2bb72.jar" />
+    </item>
+    <item
+        jar="/Users/davis/AndroidStudioProjects/app_android/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="6cbc7773921fcfedbe55657578f0cbfe614778dc">
+        <dex dex="/Users/davis/AndroidStudioProjects/app_android/app/build/intermediates/pre-dexed/anzhi/debug/com.android.support-support-v4-23.1.1_02b8caa00619e30db2c931d80ff0b276769b81fc.jar" />
+    </item>
+    <item
+        jar="/Users/davis/AndroidStudioProjects/app_android/app/libs/mpandroidchartlibrary-2-1-6.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="3f8beaf2f9b5357717e0b1ef9f6820e517784ea1">
+        <dex dex="/Users/davis/AndroidStudioProjects/app_android/app/build/intermediates/pre-dexed/anzhi/debug/mpandroidchartlibrary-2-1-6_331e5bf6ea62a0c0dfd12f427d6bebe1c261ca94.jar" />
+    </item>
+    <item
+        jar="/Users/davis/AndroidStudioProjects/app_android/app/libs/ShareSDK-QZone-2.6.4.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="606a553246f241278b45e19d5029c915ae49c316">
+        <dex dex="/Users/davis/AndroidStudioProjects/app_android/app/build/intermediates/pre-dexed/anzhi/debug/ShareSDK-QZone-2.6.4_bb1b9c998d547e47c09e8da049ec7181dc61ddec.jar" />
+    </item>
+    <item
+        jar="/Users/davis/AndroidStudioProjects/app_android/app/libs/ShareSDK-Wechat-Core-2.6.4.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="a6e8417962070d895b3567c68f104f628462bc35">
+        <dex dex="/Users/davis/AndroidStudioProjects/app_android/app/build/intermediates/pre-dexed/anzhi/debug/ShareSDK-Wechat-Core-2.6.4_c25f9a01898f3071b1085d4b7113583effb1ece4.jar" />
+    </item>
+    <item
+        jar="/Users/davis/AndroidStudioProjects/app_android/app/libs/Baidu-BaiduLBS_Android.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="71ce3dcb28c28320c0e404205b805254dd7690e8">
+        <dex dex="/Users/davis/AndroidStudioProjects/app_android/app/build/intermediates/pre-dexed/anzhi/debug/Baidu-BaiduLBS_Android_e906d562c16dd5819d5d1821065132b0c4441285.jar" />
+    </item>
+    <item
+        jar="/Users/davis/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.1.2/7052283359001bb108753cb0583a887d3bf94c82/okhttp-3.1.2.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="7052283359001bb108753cb0583a887d3bf94c82">
+        <dex dex="/Users/davis/AndroidStudioProjects/app_android/app/build/intermediates/pre-dexed/anzhi/debug/okhttp-3.1.2_13e006b0fe9838dc85da06a3b1a1ccab5a700d26.jar" />
+    </item>
+    <item
+        jar="/Users/davis/.gradle/caches/modules-2/files-2.1/com.nostra13.universalimageloader/universal-image-loader/1.9.5/442dbfb517b9ab5cb5c6da7ebf8cc28ec5bd0375/universal-image-loader-1.9.5.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="442dbfb517b9ab5cb5c6da7ebf8cc28ec5bd0375">
+        <dex dex="/Users/davis/AndroidStudioProjects/app_android/app/build/intermediates/pre-dexed/anzhi/debug/universal-image-loader-1.9.5_61d9ca99b9bbc8ba6768e180d0f3c2a55bae213e.jar" />
+    </item>
+    <item
+        jar="/Users/davis/AndroidStudioProjects/app_android/app/libs/ShareSDK-QQ-2.6.4.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="e8d59be1960d4e1b1f9119cc77966e5f7c9fb7bd">
+        <dex dex="/Users/davis/AndroidStudioProjects/app_android/app/build/intermediates/pre-dexed/anzhi/debug/ShareSDK-QQ-2.6.4_756bf91ed48c62a8c87bbb03184c96205f0d7add.jar" />
+    </item>
+    <item
+        jar="/Users/davis/AndroidStudioProjects/app_android/app/libs/Qcloud-upload_1.1.3.300_4200.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="00d446e1c9bf66b92e93d1eee6ea80896101663e">
+        <dex dex="/Users/davis/AndroidStudioProjects/app_android/app/build/intermediates/pre-dexed/anzhi/debug/Qcloud-upload_1.1.3.300_4200_1912fc7b97ba18b3a3e95369cac172dfb284efaf.jar" />
+    </item>
+    <item
+        jar="/Users/davis/AndroidStudioProjects/app_android/app/libs/Qcloud-download_1.1.3.300_4200.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="56a26a671f7bdeb0fe606c73474bc1c7a73da8cc">
+        <dex dex="/Users/davis/AndroidStudioProjects/app_android/app/build/intermediates/pre-dexed/anzhi/debug/Qcloud-download_1.1.3.300_4200_5ede90a2ae3d31e2fc1d16d43ee5c724be04f19d.jar" />
+    </item>
+    <item
+        jar="/Users/davis/.gradle/caches/modules-2/files-2.1/de.greenrobot/eventbus/2.4.0/ddd166d01b3158d1c00576d29f7ed15c030df719/eventbus-2.4.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="ddd166d01b3158d1c00576d29f7ed15c030df719">
+        <dex dex="/Users/davis/AndroidStudioProjects/app_android/app/build/intermediates/pre-dexed/anzhi/debug/eventbus-2.4.0_19405d1e84721f71d6e5d7f1a185dcd427ba27eb.jar" />
+    </item>
+    <item
+        jar="/Users/davis/AndroidStudioProjects/app_android/app/libs/ShareSDK-Wechat-Moments-2.6.4.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="dc2b46a70ccf00592d33c3afde812993d9db4ac9">
+        <dex dex="/Users/davis/AndroidStudioProjects/app_android/app/build/intermediates/pre-dexed/anzhi/debug/ShareSDK-Wechat-Moments-2.6.4_4929642737268adce91dc19a3eb01c51cc9a5525.jar" />
+    </item>
+    <item
+        jar="/Users/davis/AndroidStudioProjects/app_android/app/libs/ShareSDK-Wechat-Favorite-2.6.4.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="bd820f646c7b0315feb16ec95ae4686fa50ac74f">
+        <dex dex="/Users/davis/AndroidStudioProjects/app_android/app/build/intermediates/pre-dexed/anzhi/debug/ShareSDK-Wechat-Favorite-2.6.4_83d407432530b7c3f1181a5b03831d8d144a0388.jar" />
+    </item>
+    <item
+        jar="/Users/davis/AndroidStudioProjects/app_android/app/libs/alipaySdk-20151112.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="5ce758768906f045b279735e7cefc0b89160d9d6">
+        <dex dex="/Users/davis/AndroidStudioProjects/app_android/app/build/intermediates/pre-dexed/anzhi/debug/alipaySdk-20151112_3ac46a07f9cb43c4041b76ad57f9b7754995d636.jar" />
+    </item>
+    <item
+        jar="/Users/davis/AndroidStudioProjects/app_android/app/libs/ShareSDK-Wechat-2.6.4.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="100546a136041bcbeb9b90790b6361c932545676">
+        <dex dex="/Users/davis/AndroidStudioProjects/app_android/app/build/intermediates/pre-dexed/anzhi/debug/ShareSDK-Wechat-2.6.4_0e41100155692dc966b2ee06a2c4b328b9f8ad0d.jar" />
+    </item>
+    <item
+        jar="/Users/davis/.gradle/caches/modules-2/files-2.1/com.nineoldandroids/library/2.4.0/e9b63380f3a242dbdbf103a2355ad7e43bad17cb/library-2.4.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="e9b63380f3a242dbdbf103a2355ad7e43bad17cb">
+        <dex dex="/Users/davis/AndroidStudioProjects/app_android/app/build/intermediates/pre-dexed/anzhi/debug/library-2.4.0_622602b78a5e950ad5f036d444612f9804309150.jar" />
+    </item>
+    <item
+        jar="/Users/davis/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.6.0/98476622f10715998eacf9240d6b479f12c66143/okio-1.6.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="98476622f10715998eacf9240d6b479f12c66143">
+        <dex dex="/Users/davis/AndroidStudioProjects/app_android/app/build/intermediates/pre-dexed/anzhi/debug/okio-1.6.0_babda827a6d893e33cca3ec5543289b8a1c738f2.jar" />
+    </item>
+    <item
+        jar="/Users/davis/AndroidStudioProjects/app_android/app/build/intermediates/exploded-aar/com.commit451/PhotoView/1.2.4/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="890be6e1e56a883c9b407a11e067a61886dec123">
+        <dex dex="/Users/davis/AndroidStudioProjects/app_android/app/build/intermediates/pre-dexed/anzhi/debug/com.commit451-PhotoView-1.2.4_f1d62090c40ce135d033fb9c7ff327974fc9b3d4.jar" />
+    </item>
+    <item
+        jar="/Users/davis/.gradle/caches/modules-2/files-2.1/com.umeng.analytics/analytics/6.0.0/8023cd0713d5cd5bd212b0b6053fec03d133f9d1/analytics-6.0.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="8023cd0713d5cd5bd212b0b6053fec03d133f9d1">
+        <dex dex="/Users/davis/AndroidStudioProjects/app_android/app/build/intermediates/pre-dexed/anzhi/debug/analytics-6.0.0_8a62a1512316154c3660cc2be4c70b3cc2f7ed19.jar" />
+    </item>
+    <item
+        jar="/Users/davis/AndroidStudioProjects/app_android/app/build/intermediates/exploded-aar/app_android/adaptationlibrary/unspecified/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="92e90c585af230aed5ccd78074a7f7dbb719fa6a">
+        <dex dex="/Users/davis/AndroidStudioProjects/app_android/app/build/intermediates/pre-dexed/anzhi/debug/app_android-adaptationlibrary-unspecified_70b8c402c58ace2c2137fcc5207b2e6dc080bc60.jar" />
+    </item>
+    <item
+        jar="/Users/davis/AndroidStudioProjects/app_android/app/build/intermediates/exploded-aar/cn.bingoogolapple/bga-adapter/1.0.9/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="8a5bcaf8eca86b1a232a2b11720092d7ba6baeae">
+        <dex dex="/Users/davis/AndroidStudioProjects/app_android/app/build/intermediates/pre-dexed/anzhi/debug/cn.bingoogolapple-bga-adapter-1.0.9_4f3882cd99ba7fc4d667caec059ffef0f8cb69e3.jar" />
+    </item>
+    <item
+        jar="/Users/davis/AndroidStudioProjects/app_android/app/libs/JPush-android-2.0.5.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="f2c821a0d13219a2e70490085c390bab03fb5953">
+        <dex dex="/Users/davis/AndroidStudioProjects/app_android/app/build/intermediates/pre-dexed/anzhi/debug/JPush-android-2.0.5_82273d5668a0f1e319ac346d876866a6de45ba12.jar" />
+    </item>
+    <item
+        jar="/Users/davis/AndroidStudioProjects/app_android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="4486e953d1f35f8ccab098b1dd67146366d5f731">
+        <dex dex="/Users/davis/AndroidStudioProjects/app_android/app/build/intermediates/pre-dexed/anzhi/debug/com.android.support-appcompat-v7-22.2.1_6da5725db6b29e24c977d20d74b85be0a3e3e872.jar" />
+    </item>
+    <item
+        jar="/Users/davis/AndroidStudioProjects/app_android/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/jars/libs/internal_impl-23.1.1.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="a4de9c81ae239414e1ed0f86441b02abaf29bca9">
+        <dex dex="/Users/davis/AndroidStudioProjects/app_android/app/build/intermediates/pre-dexed/anzhi/debug/internal_impl-23.1.1_52ae71256931e663ab303fb0d8fd18a6fd27f831.jar" />
+    </item>
+    <item
+        jar="/Users/davis/AndroidStudioProjects/app_android/app/libs/ShareSDK-SinaWeibo-2.6.4.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="4536d9f7a5fb826609d5a17b30cabb21ead18d1c">
+        <dex dex="/Users/davis/AndroidStudioProjects/app_android/app/build/intermediates/pre-dexed/anzhi/debug/ShareSDK-SinaWeibo-2.6.4_c5a3c216ae5a4b1d57767e6cecc3452d0bacedc2.jar" />
+    </item>
+    <item
+        jar="/Users/davis/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.5/686c608d1805b6d4d425ec4459e88164ffc85870/gson-2.5.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="686c608d1805b6d4d425ec4459e88164ffc85870">
+        <dex dex="/Users/davis/AndroidStudioProjects/app_android/app/build/intermediates/pre-dexed/anzhi/debug/gson-2.5_c5a84b9690d7d1dcfaa39b1e4843a3d707797773.jar" />
+    </item>
+    <item
+        jar="/Users/davis/AndroidStudioProjects/app_android/app/libs/MobTools.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="4aae467e0a293d5d5cd0643e51b7b854bcc397c8">
+        <dex dex="/Users/davis/AndroidStudioProjects/app_android/app/build/intermediates/pre-dexed/anzhi/debug/MobTools_a0d6393e63a0161602c15ac69834282a59153471.jar" />
+    </item>
+    <item
+        jar="/Users/davis/AndroidStudioProjects/app_android/app/build/intermediates/exploded-aar/cn.bingoogolapple/bga-swipeitemlayout/1.0.3/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="d76a119370ce107d2f25edad2a698c50bc405a51">
+        <dex dex="/Users/davis/AndroidStudioProjects/app_android/app/build/intermediates/pre-dexed/anzhi/debug/cn.bingoogolapple-bga-swipeitemlayout-1.0.3_7a53932672e20b65a4f7cc569aea6841b00e7ae3.jar" />
+    </item>
+
+</items>

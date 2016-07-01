@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                                    card_view:cardCornerRadius="2dp"
+                                    card_view:cardBackgroundColor="#868686"
+                                    android:layout_margin="5dp">
+
+    <LinearLayout
+        android:id="@+id/itemLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/ticketImageView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:maxHeight="400dp"
+                android:minHeight="150dp"
+                android:scaleType="fitXY"
+                android:visibility="visible"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:background="#50000000"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <com.dym.film.views.CustomTypefaceTextView
+                    android:id="@+id/ticketName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:maxLines="1"
+                    android:text="asdasdasdasdasdasd"
+                    android:textColor="#ffffff"
+                    android:textSize="14sp"/>
+
+                <ImageView
+                    android:id="@+id/worthButtonImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_is_worth_white"/>
+            </LinearLayout>
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#404040"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <com.dym.film.ui.CircleImageView
+                android:id="@+id/userHeadImage"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginRight="3dp"
+                android:src="@drawable/ic_default_photo"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="left|center_vertical"
+                android:orientation="horizontal">
+
+                <com.dym.film.views.CustomTypefaceTextView
+                    android:id="@+id/userNameTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_toLeftOf="@id/genderImage"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="#ffffff"
+                    android:textSize="14sp"/>
+
+                <ImageView
+                    android:id="@+id/genderImage"
+                    android:layout_width="15sp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center"
+                    android:padding="3sp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_gender_female"/>
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <com.dym.film.views.CustomTypefaceTextView
+            android:id="@+id/sharedTicketContentTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#2e2e2e"
+            android:ellipsize="end"
+            android:maxLines="3"
+            android:padding="8dp"
+            android:text="这是你的， 你是我的。。。。这是你的， 你是我的。。。。这是你的， 你是我的。。。。这是你的， 你是我的。。。。这是你的， 你是我的。。。。这是你的， 你是我的。。。。这是你的， 你是我的。。。。这是你的， 你是我的。。。。"
+            android:textColor="#919191"
+            android:textSize="14sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#404040"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <ImageView
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_praise_count"/>
+
+            <com.dym.film.views.CustomTypefaceTextView
+                android:id="@+id/tvPraiseCount"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="5dp"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:text="0"
+                android:textColor="#7f7f7f"
+                android:textSize="12sp"/>
+
+            <ImageView
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_comment_count"/>
+
+            <com.dym.film.views.CustomTypefaceTextView
+                android:id="@+id/tvCommentCount"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:text="0"
+                android:textColor="#7f7f7f"
+                android:textSize="12sp"/>
+
+            <com.dym.film.views.CustomTypefaceTextView
+                android:id="@+id/userSharedTimeTextView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="right|center_vertical"
+                android:singleLine="true"
+                android:text="1小时前"
+                android:textColor="#7f7f7f"
+                android:textSize="12sp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>

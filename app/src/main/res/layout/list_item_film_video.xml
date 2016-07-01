@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="10dp"
+    >
+
+    <FrameLayout
+        android:id="@+id/layFilmCover"
+        android:layout_width="110dp"
+        android:layout_height="75dp"
+        android:layout_marginRight="10dp"
+        android:background="#2d2d2d"
+        android:padding="2dp">
+
+        <ImageView
+            android:id="@+id/imgFilmCover"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:maxHeight="90dp"
+            android:maxWidth="65dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_default_loading_img"/>
+
+        <View
+            android:id="@+id/serch_result_play"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:background="@drawable/ic_play_film_detail"/>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <com.dym.film.views.CustomTypefaceTextView
+            android:id="@+id/tvVideoTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="疯狂动物城"
+            android:textColor="#ffffff"
+            android:textSize="17sp"/>
+
+        <com.dym.film.views.CustomTypefaceTextView
+            android:id="@+id/tvVideoTime"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="bottom"
+            android:text="4分45秒"
+            android:textColor="#595959"
+            android:textSize="14sp"/>
+    </LinearLayout>
+</LinearLayout>

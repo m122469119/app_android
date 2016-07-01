@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/main_bg_color">
+    <include
+        layout="@layout/layout_custom_status_bar" />
+    <RelativeLayout
+        android:id="@+id/serch_relativve"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/main_title_color">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_measure_45dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/common_measure_20dp"
+            android:background="@color/listview_item_normal"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/common_measure_30dp"
+                android:layout_height="@dimen/common_measure_30dp"
+                android:layout_marginLeft="@dimen/common_measure_10dp"
+                android:layout_marginRight="@dimen/common_measure_10dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:src="@drawable/serch_icon" />
+
+            <com.dym.film.views.CustomTypefaceEditText
+                android:id="@+id/serch_edittext"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/common_measure_45dp"
+                android:layout_weight="1"
+                android:background="@color/listview_item_normal"
+                android:ellipsize="end"
+                android:hint="@string/search_hint_text"
+                android:singleLine="true"
+                android:inputType="text"
+                android:textColor="@color/white"
+                android:textColorHint="@color/item_text_hint_color"
+                android:textCursorDrawable="@null"
+                android:imeOptions="actionSearch"
+                android:textSize="@dimen/common_measure_18dp" />
+            <ImageView
+                android:id="@+id/serch_clear_icon_iv"
+                android:layout_width="@dimen/common_measure_20dp"
+                android:layout_height="@dimen/common_measure_20dp"
+                android:layout_marginLeft="@dimen/common_measure_10dp"
+                android:layout_marginRight="@dimen/common_measure_10dp"
+                android:onClick="doClick"
+                android:visibility="invisible"
+                android:src="@drawable/serch_clear_icon" />
+            <com.dym.film.views.CustomTypefaceTextView
+                android:id="@+id/serch_tv_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@color/main_title_color"
+                android:clickable="true"
+                android:gravity="center"
+                android:onClick="doClick"
+                android:paddingLeft="@dimen/common_measure_20dp"
+                android:paddingRight="@dimen/common_measure_20dp"
+                android:text="取消"
+                android:textColor="@color/white"
+                android:textSize="@dimen/common_measure_18dp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.dym.film.activity.search.MySearchScrollView
+            android:id="@+id/mySearchScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+        <com.dym.film.views.CustomTypefaceTextView
+            android:id="@+id/serch_result_et"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_measure_45dp"
+            android:background="@color/listview_item_normal"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:paddingLeft="@dimen/common_measure_22dp"
+            android:textColor="@color/text_color_gray"
+            android:textSize="@dimen/common_measure_18dp"
+            android:text="电影"/>
+        <com.dym.film.views.LoadMoreRecyclerView
+            android:id="@+id/serch_result_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/red">
+        </com.dym.film.views.LoadMoreRecyclerView>
+
+        <com.dym.film.views.CustomTypefaceTextView
+            android:id="@+id/serch_result_et_author"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_measure_45dp"
+            android:background="@color/listview_item_normal"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:paddingLeft="@dimen/common_measure_22dp"
+            android:textColor="@color/text_color_gray"
+            android:textSize="@dimen/common_measure_18dp"
+            android:text="影评人"/>
+        <com.dym.film.views.LoadMoreRecyclerView
+            android:id="@+id/serch_result_list_author"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </com.dym.film.views.LoadMoreRecyclerView>
+        <com.dym.film.views.CustomTypefaceTextView
+            android:id="@+id/serch_result_et_review"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_measure_45dp"
+            android:background="@color/listview_item_normal"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:paddingLeft="@dimen/common_measure_22dp"
+            android:textColor="@color/text_color_gray"
+            android:textSize="@dimen/common_measure_18dp"
+            android:text="影评"/>
+        <com.dym.film.views.LoadMoreRecyclerView
+            android:id="@+id/serch_result_list_review"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </com.dym.film.views.LoadMoreRecyclerView>
+
+        </LinearLayout>
+        </com.dym.film.activity.search.MySearchScrollView>
+        <com.dym.film.ui.ProgressWheel
+            android:id="@+id/progress_dialog"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            app:matProg_barColor="#b10b0b"
+            app:matProg_circleRadius="50dp"
+            app:matProg_fillRadius="false"
+            android:visibility="gone"
+            app:matProg_progressIndeterminate="true" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+
+            android:background="@drawable/ic_default_loading_img" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp">
+            <com.bigkoo.convenientbanner.ConvenientBanner
+                android:id="@+id/filmReviewBanner"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                app:canLoop="true"/>
+
+        </LinearLayout>
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/recommendLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.dym.film.views.CustomTypefaceTextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="推荐影评人"
+            android:textColor="@color/film_tag_border_color"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:textSize="12sp"
+            android:paddingLeft="10dp" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:background="#0b0b0b">
+            <com.dym.film.ui.HorizontalListView
+                android:id="@+id/hotReviewerList"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="10dp"
+                app:dividerWidth="10dp"
+                app:paddingEnd="10dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

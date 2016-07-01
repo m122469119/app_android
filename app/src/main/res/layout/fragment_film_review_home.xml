@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+    android:background="@color/main_bg_color">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/main_title_color">
+        <com.dym.film.ui.viewpagerindicator.FixPageIndicator
+            android:id="@+id/indicator"
+            android:layout_width="128dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="9dp"
+            android:layout_marginBottom="9dp"
+            android:layout_gravity="center"
+            android:background="@drawable/bg_film_type_tab_shape"/>
+
+        <ImageView
+            android:id="@+id/fragment_filmReview_search"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_title_bar_search_selector"
+            android:gravity="center"
+            android:layout_gravity="right"
+            android:padding="15dp"/>
+    </FrameLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@drawable/ic_up_float_shadow"></View>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

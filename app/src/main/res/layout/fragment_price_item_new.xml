@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/price_swipeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/main_bg_color">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/common_measure_300dp"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:id="@+id/price_fragment_loading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+            <include layout="@layout/dialog_progress_wheel" />
+        </RelativeLayout>
+        <com.dym.film.views.LoadMoreRecyclerView
+            android:id="@+id/price_stretch_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+           >
+        </com.dym.film.views.LoadMoreRecyclerView>
+    </RelativeLayout>
+    </android.support.v4.widget.SwipeRefreshLayout>
+</LinearLayout>

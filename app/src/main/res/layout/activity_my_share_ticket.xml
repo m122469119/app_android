@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/main_title_color"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/btnProtocolBack"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@null"
+            android:onClick="doClick"
+            android:padding="15dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/btn_titlebar_back_selector"/>
+
+        <com.dym.film.views.CustomTypefaceTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="我晒"
+            android:textColor="#ffffff"
+            android:textSize="18sp"/>
+
+        <LinearLayout
+            android:id="@+id/btnShareTicket"
+            android:orientation="vertical"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:visibility="invisible"
+            android:onClick="doClick">
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_share_ticket_selector"/>
+            <com.dym.film.views.CustomTypefaceTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:singleLine="true"
+                android:layout_marginTop="1dp"
+                android:text="晒 票"
+                android:textColor="@android:color/white"
+                android:textSize="8sp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.dym.film.views.MySwipeRefreshLayout
+            android:id="@+id/refreshLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.dym.film.ui.LoadMoreListView
+                android:id="@+id/listMyShareTicket"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/main_bg_color"
+                android:divider="@color/border_color"
+                android:dividerHeight="1px"
+                android:footerDividersEnabled="false">
+
+            </com.dym.film.ui.LoadMoreListView>
+        </com.dym.film.views.MySwipeRefreshLayout>
+
+        <LinearLayout
+            android:id="@+id/layNoSharedTicket"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="invisible">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginTop="100dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_no_shared_ticket"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="暂无晒票"
+                android:textColor="#525252"
+                android:textSize="18sp"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>

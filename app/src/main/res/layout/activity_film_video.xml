@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<com.dym.film.views.MySwipeRefreshLayout android:id="@+id/refreshLayout"
+                                         xmlns:android="http://schemas.android.com/apk/res/android"
+                                         android:layout_width="match_parent"
+                                         android:layout_height="match_parent">
+
+    <com.dym.film.ui.LoadMoreListView
+        android:id="@+id/listFilmVideo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@color/border_color2"
+        android:dividerHeight="0.5dp"
+        android:footerDividersEnabled="false"
+        android:listSelector="@drawable/bg_btn_black_pressed_selector">
+    </com.dym.film.ui.LoadMoreListView>
+
+</com.dym.film.views.MySwipeRefreshLayout>

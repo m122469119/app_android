@@ -1,0 +1,68 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#0f0f0f">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/btnMy"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="left"
+                android:background="@null"
+                android:onClick="doClick"
+                android:padding="15dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_title_bar_my_selector"/>
+
+            <ImageView
+                android:id="@+id/unreadImage"
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:layout_gravity="right|top"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/ic_red_circle_shape"
+                android:visibility="invisible"/>
+        </FrameLayout>
+
+        <com.dym.film.ui.viewpagerindicator.FixPageIndicator
+            android:id="@+id/indicator"
+            android:layout_width="190dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center"
+            android:background="@drawable/bg_film_type_tab_shape"
+            />
+
+        <ImageButton
+            android:id="@+id/btnToSelectFilm"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:background="@null"
+            android:onClick="doClick"
+            android:padding="15dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_title_bar_search_selector"/>
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@drawable/ic_up_float_shadow"></View>
+
+    <com.dym.film.views.HackyViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+</LinearLayout>

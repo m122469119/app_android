@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/hotFilmLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#000">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="18dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/bg_hot_film"
+            android:tint="#171717"
+            android:visibility="visible"/>
+
+        <com.dym.film.ui.HorizontalListView
+            android:id="@+id/hotTagHorListView"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:paddingLeft="10dp"
+            app:dividerWidth="10dp"
+            android:layout_gravity="center_vertical"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="18dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/bg_hot_film"
+            android:tint="#171717"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/border_color"/>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/ic_hot"/>
+</FrameLayout>

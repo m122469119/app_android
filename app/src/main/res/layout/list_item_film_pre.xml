@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal"
+              android:background="#00202020"
+              android:padding="10dp">
+
+    <FrameLayout
+        android:id="@+id/layFilmCover"
+        android:layout_width="65dp"
+        android:layout_height="90dp"
+        android:layout_marginRight="10dp"
+        android:background="#2d2d2d"
+        android:padding="2dp">
+
+        <ImageView
+            android:id="@+id/imgFilmCover"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:maxHeight="90dp"
+            android:maxWidth="65dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_default_loading_img"/>
+
+        <View
+            android:id="@+id/serch_result_play"
+            android:layout_width="@dimen/common_measure_60dp"
+            android:layout_height="@dimen/common_measure_60dp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:background="@drawable/ic_play_film_detail"
+            android:visibility="invisible"/>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
+            android:orientation="vertical">
+
+            <com.dym.film.views.CustomTypefaceTextView
+                android:id="@+id/tvFilmName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="疯狂动物城"
+                android:textColor="#ffffff"
+                android:textSize="16sp"/>
+
+            <com.dym.film.views.CustomTypefaceTextView
+                android:id="@+id/tvFilmIntro"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:lineSpacingExtra="2dp"
+                android:ellipsize="end"
+                android:layout_marginTop="3dp"
+                android:maxLines="2"
+                android:text="qweqweqweqweqwe"
+                android:textColor="#7e7e7e"
+                android:textSize="14sp"/>
+
+            <com.dym.film.views.CustomTypefaceTextView
+                android:id="@+id/tvFilmDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12|32点评"
+                android:textColor="#595959"
+                android:textSize="14sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="bottom|right"
+                android:visibility="gone"
+                android:orientation="horizontal">
+
+                <com.dym.film.views.CustomTypefaceTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="90"
+                    android:textColor="#b10b0b"
+                    android:textSize="17sp"/>
+
+                <com.dym.film.views.CustomTypefaceTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="%"
+                    android:textColor="#b10b0b"
+                    android:textSize="8sp"/>
+
+                <com.dym.film.views.CustomTypefaceTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="/"
+                    android:textColor="#7e7e7e"
+                    android:textSize="17sp"/>
+                <com.dym.film.views.CustomTypefaceTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="专家好评"
+                    android:textColor="#7e7e7e"
+                    android:textSize="8sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="bottom|right"
+                android:visibility="gone"
+                android:orientation="horizontal">
+
+                <com.dym.film.views.CustomTypefaceTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="96"
+                    android:textColor="#b10b0b"
+                    android:textSize="17sp"/>
+
+                <com.dym.film.views.CustomTypefaceTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="%"
+                    android:textColor="#b10b0b"
+                    android:textSize="8sp"/>
+
+                <com.dym.film.views.CustomTypefaceTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="/"
+                    android:textColor="#7e7e7e"
+                    android:textSize="17sp"/>
+                <com.dym.film.views.CustomTypefaceTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="观众好评"
+                    android:textColor="#7e7e7e"
+                    android:textSize="8sp"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+            <Button
+                android:id="@+id/btnBuyTicket"
+                android:layout_width="73dp"
+                android:layout_height="31dp"
+                android:text="预售比价"
+                android:layout_gravity="right"
+                android:background="@drawable/bg_btn_presale_ticket_selector"
+                android:focusable="false"
+                android:textColor="#FF7B7B"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+
+    <LinearLayout
+        android:id="@+id/local_linear"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_measure_86dp"
+        android:background="@drawable/bg_btn_grey_pressed_selector"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <com.dym.film.views.CustomTypefaceTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/common_measure_16dp"
+            android:text="当前定位城市:"
+            android:textColor="@color/item_text_gray_color"
+            android:textSize="@dimen/common_measure_22dp" />
+        <com.dym.film.views.CustomTypefaceTextView
+            android:id="@+id/cinema_city_locate_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/common_measure_10dp"
+            android:text="上海"
+            android:textColor="@color/white"
+            android:textSize="@dimen/common_measure_22dp" />
+    </LinearLayout>
+    <com.dym.film.ui.citylist.widget.ContactListViewImpl
+        android:id="@+id/city_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:cacheColorHint="#00000000"
+        android:divider="@null"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="false"
+        android:footerDividersEnabled="true"
+        android:headerDividersEnabled="true"
+        android:listSelector="@drawable/bg_btn_grey_pressed_selector"
+        android:smoothScrollbar="true" />
+</LinearLayout>

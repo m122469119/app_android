@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/listItemLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_btn_black_pressed_selector"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="74dp"
+        android:paddingRight="10dp"
+        android:orientation="horizontal">
+
+        <com.dym.film.ui.CircleImageView
+            android:id="@+id/avatar"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="7dp"
+            android:src="@android:color/darker_gray"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_marginTop="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:orientation="horizontal"
+                android:gravity="bottom|left">
+
+                <com.dym.film.views.CustomTypefaceTextView
+                    android:id="@+id/name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="magasa"
+                    android:singleLine="true"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"/>
+
+                <LinearLayout
+                    android:id="@+id/followFlag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:orientation="horizontal"
+                    android:visibility="invisible">
+
+                    <ImageView
+                        android:layout_width="10sp"
+                        android:layout_height="match_parent"
+                        android:scaleType="fitCenter"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:src="@drawable/ic_has_follow"/>
+
+                    <com.dym.film.views.CustomTypefaceTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="已关注"
+                        android:singleLine="true"
+                        android:textColor="#F5A623"
+                        android:textSize="10sp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="right">
+
+                    <com.dym.film.views.CustomTypefaceTextView
+                        android:id="@+id/reviewNum"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="13篇影评"
+                        android:singleLine="true"
+                        android:textColor="#606060"
+                        android:textSize="12sp"/>
+
+                    <ImageView
+                        android:layout_width="12sp"
+                        android:layout_height="12sp"
+                        android:layout_marginBottom="1dp"
+                        android:scaleType="fitCenter"
+                        android:layout_gravity="center_vertical"
+                        android:tint="#606060"
+                        android:src="@drawable/ic_right_arrow"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <com.dym.film.views.CustomTypefaceTextView
+                android:id="@+id/intro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:gravity="top|left"
+                android:paddingTop="2dp"
+                android:singleLine="true"
+                android:text="著名影评人, 双语作家, 文化评论人"
+                android:textColor="@color/film_tag_border_color"
+                android:textSize="12sp"/>
+        </LinearLayout>
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_weight="0"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:orientation="vertical"-->
+            <!--android:paddingRight="5dp">-->
+
+            <!--<com.dym.film.views.CustomTypefaceTextView-->
+                <!--android:id="@+id/criticFilmReviewNum"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:gravity="bottom|right"-->
+                <!--android:singleLine="true"-->
+                <!--android:text="12"-->
+                <!--android:textColor="#606060"-->
+                <!--android:textSize="34sp"-->
+                <!--app:customTypeface="number"/>-->
+
+            <!--<com.dym.film.views.CustomTypefaceTextView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:gravity="center_vertical|right"-->
+                <!--android:singleLine="true"-->
+                <!--android:text="篇影评"-->
+                <!--android:textColor="#606060"-->
+                <!--android:textSize="13sp"/>-->
+        <!--</LinearLayout>-->
+
+    </LinearLayout>
+
+    <com.dym.film.views.CustomTypefaceTextView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/fen_ge_line"/>
+
+</LinearLayout>

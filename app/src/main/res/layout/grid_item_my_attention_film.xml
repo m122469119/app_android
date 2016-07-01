@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="2dp"
+        android:background="#2d2d2d">
+        <ImageView
+            android:id="@+id/imgFilmCover"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:maxHeight="144dp"
+            android:maxWidth="100dp"
+            android:src="@drawable/ic_default_loading_img"
+            >
+        </ImageView>
+
+    </FrameLayout>
+
+    <com.dym.film.views.CustomTypefaceTextView
+        android:id="@+id/tvFilmName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="12sp"
+        android:singleLine="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:textColor="#ffffff"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:orientation="horizontal">
+        <com.dym.film.views.CustomTypefaceTextView
+            android:id="@+id/tvFilmIndex"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="银幕100%"
+            android:textSize="10sp"
+            android:singleLine="true"
+            android:textColor="#b6b6b6"/>
+        <com.dym.film.views.CustomTypefaceTextView
+            android:id="@+id/tvTicketIndex"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="票根100%"
+            android:textSize="10sp"
+            android:singleLine="true"
+            android:textColor="#b6b6b6"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

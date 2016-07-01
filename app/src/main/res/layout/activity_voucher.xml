@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:qpp="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg_color"
+    android:orientation="vertical">
+    <include layout="@layout/layout_custom_status_bar" />
+
+    <RelativeLayout
+        android:id="@+id/voucher_title_relative"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/main_title_color">
+
+        <LinearLayout
+            android:id="@+id/voucher_iv_back"
+            android:layout_width="?attr/actionBarSize"
+            android:layout_height="?attr/actionBarSize"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="doClick">
+
+            <ImageView
+                android:layout_width="@dimen/common_measure_30dp"
+                android:layout_height="@dimen/common_measure_30dp"
+                android:layout_centerVertical="true"
+                android:scaleType="centerInside"
+                android:src="@drawable/btn_titlebar_back_selector" />
+        </LinearLayout>
+
+        <com.dym.film.views.CustomTypefaceTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:ellipsize="end"
+            android:maxLength="10"
+            android:singleLine="true"
+            android:text="电影票兑换券"
+            android:textColor="@color/white"
+            android:textSize="@dimen/common_measure_24dp" />
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/main_bg_color"
+        android:orientation="vertical">
+        <LinearLayout
+            android:id="@+id/voucher_linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <include layout="@layout/voucher_layout_item" />
+        </LinearLayout>
+
+        <com.dym.film.views.CustomTypefaceTextView
+            android:id="@+id/voucher_iv_des"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/voucher_linear"
+            android:layout_marginLeft="@dimen/common_measure_12dp"
+            android:layout_marginTop="@dimen/common_measure_20dp"
+            android:ellipsize="end"
+            android:maxLength="50"
+            android:singleLine="true"
+            android:text="可兑换的影片:"
+            android:textColor="@color/white"
+            android:layout_marginBottom="@dimen/common_measure_10dp"
+            android:textSize="@dimen/common_measure_18dp" />
+
+
+        <LinearLayout
+            android:id="@+id/voucher_linear1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/voucher_iv_des"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <com.dym.film.views.CustomTypefaceTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/voucher_linear"
+                android:layout_marginLeft="@dimen/common_measure_12dp"
+                android:layout_marginTop="@dimen/common_measure_20dp"
+                android:ellipsize="end"
+                android:maxLength="50"
+                android:singleLine="true"
+                android:text="观影场次:"
+                android:textColor="@color/item_text_gray_color"
+                android:textSize="@dimen/common_measure_18dp" />
+
+            <com.dym.film.views.CustomTypefaceTextView
+                android:id="@+id/voucher_iv_place_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/voucher_linear"
+                android:layout_marginLeft="@dimen/common_measure_12dp"
+                android:layout_marginTop="@dimen/common_measure_20dp"
+                android:ellipsize="end"
+                android:maxLength="50"
+                android:singleLine="true"
+                android:text="2D/3D"
+                android:textColor="@color/item_text_gray_color"
+                android:textSize="@dimen/common_measure_18dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/voucher_linear2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/voucher_linear1"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <com.dym.film.views.CustomTypefaceTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/voucher_linear"
+                android:layout_marginLeft="@dimen/common_measure_12dp"
+                android:layout_marginTop="@dimen/common_measure_20dp"
+                android:ellipsize="end"
+                android:maxLength="50"
+                android:singleLine="true"
+                android:text="可观影次数:"
+                android:textColor="@color/item_text_gray_color"
+                android:textSize="@dimen/common_measure_18dp" />
+
+            <com.dym.film.views.CustomTypefaceTextView
+                android:id="@+id/voucher_iv_des_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/voucher_linear"
+                android:layout_marginLeft="@dimen/common_measure_12dp"
+                android:layout_marginTop="@dimen/common_measure_20dp"
+                android:ellipsize="end"
+                android:maxLength="50"
+                android:singleLine="true"
+                android:text="1个人观影1场"
+                android:textColor="@color/item_text_gray_color"
+                android:textSize="@dimen/common_measure_18dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/voucher_linear3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/voucher_linear2"
+            android:orientation="vertical">
+
+            <com.dym.film.views.CustomTypefaceTextView
+                android:id="@+id/voucher_iv_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/voucher_linear"
+                android:layout_marginLeft="@dimen/common_measure_12dp"
+                android:layout_marginTop="@dimen/common_measure_20dp"
+                android:lineSpacingExtra="@dimen/common_measure_20dp"
+                android:maxLength="50"
+                android:visibility="gone"
+                android:text="购买劵后,需要去火票务平台兑换电影票; \n仅限部分影院和影片可用，购买前请去票车务平台查看"
+                android:textColor="@color/item_text_gray_color"
+                android:textSize="@dimen/common_measure_18dp" />
+
+            <com.dym.film.views.FlowLayout
+                android:id="@+id/flowView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/common_measure_12dp"
+                android:gravity="start|top"></com.dym.film.views.FlowLayout>
+        </LinearLayout>
+
+
+        <com.dym.film.views.CustomTypefaceTextView
+            android:id="@+id/voucher_iv_des1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/voucher_linear3"
+            android:layout_marginLeft="@dimen/common_measure_12dp"
+            android:layout_marginTop="@dimen/common_measure_53dp"
+            android:ellipsize="end"
+            android:maxLength="50"
+            android:singleLine="true"
+            android:text="购买须知:"
+            android:textColor="@color/white"
+            android:textSize="@dimen/common_measure_18dp" />
+
+        <com.dym.film.views.CustomTypefaceTextView
+            android:id="@+id/voucher_pay_notion_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/voucher_iv_des1"
+            android:layout_marginLeft="@dimen/common_measure_12dp"
+            android:layout_marginTop="@dimen/common_measure_20dp"
+            android:lineSpacingExtra="@dimen/common_measure_20dp"
+            android:maxLength="50"
+            android:text="1.本券可兑换指定影片;\n2.请购买后在选择影院、影片和观影场次;"
+            android:textColor="@color/item_text_gray_color"
+            android:textSize="@dimen/common_measure_18dp" />
+
+    </LinearLayout>
+    </ScrollView>
+
+    <com.dym.film.views.CustomTypefaceTextView
+        android:id="@+id/voucher_pay_btn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_measure_66dp"
+        android:background="@drawable/btn_red_shape_selector"
+        android:clickable="true"
+        android:gravity="center"
+        android:onClick="doClick"
+        android:text="立即抢购"
+        android:textColor="@color/white"
+        android:textSize="@dimen/common_measure_22dp" />
+</LinearLayout>

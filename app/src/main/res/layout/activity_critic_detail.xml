@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+    android:background="@color/main_bg_color">
+
+
+    <com.dym.film.views.LoadMoreRecyclerView
+        android:id="@+id/criticRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"/>
+
+    <LinearLayout
+        android:id="@+id/criticTitle"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/customStatusBarView"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:background="@color/main_title_color"
+            android:visibility="gone"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <com.dym.film.views.CustomTypefaceTextView
+                android:id="@+id/criticTitleText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/main_title_color"
+                android:gravity="center"
+                android:text="冯小刚"
+                android:alpha="0"
+                android:textColor="#ffffff"
+                android:textSize="17sp"/>
+
+            <ImageView
+                android:id="@+id/backImageBtn"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:padding="15dp"
+                android:layout_gravity="left"
+                android:scaleType="fitCenter"
+                android:src="@drawable/btn_titlebar_back_selector"/>
+
+            <ImageView
+                android:id="@+id/criticFollowBtn"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:layout_gravity="right"
+                android:padding="15dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/btn_following_selector"/>
+        </FrameLayout>
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/loadingProgress"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"/>
+</FrameLayout>

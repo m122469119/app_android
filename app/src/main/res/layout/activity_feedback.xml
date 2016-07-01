@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/main_bg_color"
+              android:orientation="vertical"
+    >
+    <include
+        layout="@layout/layout_custom_status_bar" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/main_title_color"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@null"
+            android:onClick="doClick"
+            android:padding="15dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/btn_titlebar_back_selector"/>
+
+        <com.dym.film.views.CustomTypefaceTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="意见反馈"
+            android:textColor="#ffffff"
+            android:textSize="18sp"/>
+
+        <com.dym.film.views.CustomTypefaceTextView
+            android:id="@+id/btnSubmitOpinion"
+            android:onClick="doClick"
+            android:clickable="true"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:background="@null"
+            android:text="提交"
+            android:textColor="#ffffff"
+            android:textSize="16sp"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="15dp"
+        android:background="@color/border_color"/>
+
+    <com.dym.film.views.CustomTypefaceEditText
+        android:id="@+id/etOpinion"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@color/item_bg_color"
+        android:hint="输入你的意见（不能为空，不超过512字）"
+        android:textColor="#ffffff"
+        android:textColorHint="#7e7e7e"
+        android:gravity="left|top"
+        android:padding="10dp"
+        android:maxLength="512"
+        android:textSize="15sp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/border_color"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="15dp"
+        android:background="@color/border_color"/>
+
+    <com.dym.film.views.CustomTypefaceEditText
+        android:id="@+id/etMobile"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/item_bg_color"
+        android:hint="你的手机号(可选)"
+        android:textColor="#ffffff"
+        android:textColorHint="#7e7e7e"
+        android:padding="10dp"
+        android:inputType="phone"
+        android:maxLength="11"
+        android:textSize="15sp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/border_color"/>
+</LinearLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="@dimen/common_measure_42dp"
+    android:gravity="center_vertical"
+    >
+    <com.dym.film.views.CustomTypefaceTextView
+        android:id="@+id/cinema_tv_region_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:gravity="center_vertical"
+        android:padding="5dp"
+        android:layout_marginLeft="@dimen/common_measure_14dp"
+        android:text="不限"
+        android:textColor="@color/cinema_region_text_item"
+        android:background="@drawable/bg_shape_text_item_cinema_region"
+        android:textSize="@dimen/common_measure_18dp" />
+</LinearLayout>

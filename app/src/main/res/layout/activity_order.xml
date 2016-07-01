@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/main_bg_color">
+    <include
+        layout="@layout/layout_custom_status_bar" />
+    <RelativeLayout
+        android:id="@+id/order_title_relative"
+        android:layout_width="match_parent"
+        android:background="@color/main_title_color"
+        android:layout_height="?attr/actionBarSize">
+
+        <LinearLayout
+            android:id="@+id/order_iv_back"
+            android:layout_width="?attr/actionBarSize"
+            android:layout_height="?attr/actionBarSize"
+            android:onClick="doClick"
+            android:gravity="center">
+            <ImageView
+                android:layout_width="@dimen/common_measure_30dp"
+                android:layout_height="@dimen/common_measure_30dp"
+                android:layout_centerVertical="true"
+                android:scaleType="centerInside"
+                android:src="@drawable/btn_titlebar_back_selector" />
+        </LinearLayout>
+
+        <com.dym.film.views.CustomTypefaceTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:ellipsize="end"
+            android:maxLength="10"
+            android:singleLine="true"
+            android:text="确认订单"
+            android:textColor="@color/white"
+            android:textSize="@dimen/common_measure_24dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/order_relative0"
+        android:layout_below="@id/order_title_relative"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/common_measure_40dp"
+        android:layout_height="@dimen/common_measure_46dp">
+        <com.dym.film.views.CustomTypefaceTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:layout_marginLeft="@dimen/common_measure_15dp"
+            android:maxLength="10"
+            android:singleLine="true"
+            android:text="电影票兑换券"
+            android:layout_centerVertical="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/common_measure_22dp" />
+
+        <com.dym.film.views.CustomTypefaceTextView
+            android:id="@+id/order_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/item_text_gray_color"
+            android:textSize="@dimen/common_measure_40dp"
+            android:layout_alignParentRight="true"
+            app:customTypeface="number"
+            android:layout_marginRight="@dimen/common_measure_15dp"
+            android:textStyle="bold"/>
+        <com.dym.film.views.CustomTypefaceTextView
+            android:id="@+id/order_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="￥"
+            android:textColor="@color/item_text_gray_color"
+            android:layout_alignBaseline="@id/order_number"
+            android:layout_toLeftOf="@id/order_number"
+            android:layout_marginRight="@dimen/common_measure_8dp"
+            android:textSize="@dimen/common_measure_22dp" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/order_relative"
+        android:layout_below="@id/order_relative0"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/common_measure_40dp"
+        android:layout_height="@dimen/common_measure_46dp">
+        <com.dym.film.views.CustomTypefaceTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:layout_marginLeft="@dimen/common_measure_15dp"
+            android:maxLength="10"
+            android:singleLine="true"
+            android:text="数量"
+            android:layout_centerVertical="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/common_measure_22dp" />
+
+        <com.dym.film.views.CustomTypefaceTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:textColor="@color/item_text_gray_color"
+            android:textSize="@dimen/common_measure_40dp"
+            android:layout_alignParentRight="true"
+            app:customTypeface="number"
+            android:layout_marginRight="@dimen/common_measure_15dp"
+            android:textStyle="bold"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/order_relative1"
+        android:layout_below="@id/order_relative"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/common_measure_40dp"
+        android:layout_height="@dimen/common_measure_46dp">
+        <com.dym.film.views.CustomTypefaceTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:layout_marginLeft="@dimen/common_measure_15dp"
+            android:maxLength="10"
+            android:singleLine="true"
+            android:text="数量"
+            android:layout_centerVertical="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/common_measure_22dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/common_measure_46dp"
+            android:orientation="horizontal"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/common_measure_15dp">
+        <com.dym.film.views.CustomTypefaceTextView
+            android:id="@+id/order_number_minus"
+            android:layout_width="@dimen/common_measure_62dp"
+            android:layout_height="match_parent"
+            android:background="@color/price_linerlayout_backgroudcolor"
+            android:text="-"
+            android:clickable="true"
+            android:onClick="doClick"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/common_measure_24dp"
+            android:layout_alignParentRight="true"
+           />
+        <com.dym.film.views.CustomTypefaceEditText
+            android:id="@+id/order_numbers"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/main_title_color"
+            android:text="1"
+            android:minWidth="@dimen/common_measure_62dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:singleLine="true"
+            android:gravity="center"
+            android:digits="1234567890"
+            android:maxLength="3"
+            android:inputType="number"
+            android:textColor="@color/white"
+            android:textSize="@dimen/common_measure_22dp"
+            android:layout_alignParentRight="true"
+           />
+        <com.dym.film.views.CustomTypefaceTextView
+            android:id="@+id/order_number_plus"
+            android:layout_width="@dimen/common_measure_62dp"
+            android:layout_height="match_parent"
+            android:background="@color/red_color"
+            android:text="+"
+            android:clickable="true"
+            android:onClick="doClick"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/common_measure_24dp"
+            android:layout_alignParentRight="true"
+           />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/order_relative2"
+        android:layout_below="@id/order_relative1"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/common_measure_40dp"
+        android:layout_height="@dimen/common_measure_46dp">
+        <com.dym.film.views.CustomTypefaceTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:layout_marginLeft="@dimen/common_measure_15dp"
+            android:maxLength="10"
+            android:singleLine="true"
+            android:text="总计"
+            android:layout_centerVertical="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/common_measure_22dp" />
+
+        <com.dym.film.views.CustomTypefaceTextView
+            android:id="@+id/order_all_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="50"
+            android:textColor="@color/item_text_gray_color"
+            android:textSize="@dimen/common_measure_40dp"
+            android:layout_alignParentRight="true"
+            app:customTypeface="number"
+            android:layout_marginRight="@dimen/common_measure_15dp"
+            android:textStyle="bold"/>
+        <com.dym.film.views.CustomTypefaceTextView
+            android:id="@+id/order_tag1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="￥"
+            android:textColor="@color/item_text_gray_color"
+            android:layout_alignBaseline="@id/order_all_number"
+            android:layout_toLeftOf="@id/order_all_number"
+            android:layout_marginRight="@dimen/common_measure_8dp"
+            android:textSize="@dimen/common_measure_22dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/order_relative3"
+        android:layout_below="@id/order_relative2"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/common_measure_40dp"
+        android:layout_height="@dimen/common_measure_46dp">
+        <com.dym.film.views.CustomTypefaceTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:layout_marginLeft="@dimen/common_measure_15dp"
+            android:maxLength="10"
+            android:singleLine="true"
+            android:text="电话号码"
+            android:layout_centerVertical="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/common_measure_22dp" />
+
+        <com.dym.film.views.CustomTypefaceEditText
+            android:id="@+id/order_edit_phone"
+            android:layout_width="@dimen/common_measure_188dp"
+            android:layout_height="match_parent"
+            android:background="@color/main_title_color"
+            android:layout_marginRight="@dimen/common_measure_15dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:singleLine="true"
+            android:hint="请输入手机号"
+            android:textColorHint="@color/text_color_gray"
+            android:gravity="right|center_vertical"
+            android:digits="1234567890"
+            android:inputType="number"
+            android:textColor="@color/white"
+            android:textSize="@dimen/common_measure_22dp"
+            android:layout_alignParentRight="true"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_measure_64dp"
+        android:layout_below="@id/order_relative2"
+        android:layout_marginTop="@dimen/common_measure_133dp">
+    <com.dym.film.views.CustomTypefaceTextView
+        android:id="@+id/comment_order_btn"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="提交订单"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:clickable="true"
+        android:onClick="doClick"
+        android:background="@drawable/btn_red_shape_selector"
+        android:layout_marginRight="@dimen/common_measure_54dp"
+        android:layout_marginLeft="@dimen/common_measure_54dp"
+        android:textSize="@dimen/common_measure_22dp" />
+        <com.dym.film.ui.ProgressWheel
+            android:id="@+id/comment_order_btn_load"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            app:matProg_barColor="#b10b0b"
+            app:matProg_circleRadius="50dp"
+            app:matProg_fillRadius="false"
+            android:visibility="gone"
+            app:matProg_progressIndeterminate="true"/>
+    </RelativeLayout>
+</LinearLayout>

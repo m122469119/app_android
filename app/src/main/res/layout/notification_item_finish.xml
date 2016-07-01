@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="3dp" >
+
+    <ImageView
+        android:id="@+id/notificationfinishImage"
+        android:layout_width="@dimen/common_measure_65dp"
+        android:layout_height="@dimen/common_measure_65dp"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/ic_launcher" />
+
+    <LinearLayout
+        android:id="@+id/notificationlay"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/notificationfinishTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/common_measure_10dp"
+            android:text="正在下载"
+            android:textSize="@dimen/common_measure_20dp" />
+
+        <TextView
+            android:id="@+id/notificationfinishPercent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/common_measure_10dp"
+            android:text="0%"
+            android:textColor="#9c9b9c"
+            android:textSize="@dimen/common_measure_18dp" />
+    </LinearLayout>
+
+</LinearLayout>

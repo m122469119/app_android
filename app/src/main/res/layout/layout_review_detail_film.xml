@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="87dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="1px"
+        android:background="#363636"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="5dp"
+        android:paddingTop="10dp">
+
+        <ImageView
+            android:id="@+id/filmPost"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="bottom"
+                android:orientation="horizontal">
+
+                <com.dym.film.views.CustomTypefaceTextView
+                    android:id="@+id/filmNameText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:text="夏洛特烦恼"
+                    android:textColor="@android:color/white"
+                    android:textSize="17sp"/>
+
+
+                <LinearLayout
+                    android:id="@+id/indexLayout"
+                    android:layout_weight="0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="right">
+
+                    <com.dym.film.views.CustomTypefaceTextView
+                        android:id="@+id/filmIndex"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical|right"
+                        android:text="96"
+                        android:paddingRight="1dp"
+                        android:textColor="#ce0400"
+                        android:textSize="17sp"
+                        android:textStyle="bold|italic"/>
+
+                    <com.dym.film.views.CustomTypefaceTextView
+                        android:id="@+id/filmIndexPercent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical|bottom"
+                        android:text="%"
+                        android:textColor="#ce0400"
+                        android:textSize="8sp"
+                        android:textStyle="bold"/>
+
+                    <com.dym.film.views.CustomTypefaceTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical|bottom"
+                        android:paddingLeft="3dp"
+                        android:paddingRight="3dp"
+                        android:text="/"
+                        android:textColor="@color/text_color_gray"
+                        android:textSize="10sp"
+                        android:textStyle="bold"/>
+                    <com.dym.film.views.CustomTypefaceTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="right|center_vertical"
+                        android:paddingBottom="1dp"
+                        android:singleLine="true"
+                        android:text="专家好评"
+                        android:layout_gravity="bottom"
+                        android:textColor="@color/white"
+                        android:textSize="8sp"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <com.dym.film.views.CustomTypefaceTextView
+                android:id="@+id/filmAreaTime"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:text="中国大陆 / 2015-09-30 上映"
+                android:textColor="@color/secondary_text_color"
+                android:textSize="12sp"/>
+
+            <!-- 电影演员名-->
+            <com.dym.film.views.CustomTypefaceTextView
+                android:id="@+id/filmCast"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:text="演员: 沈腾 / 马丽 / 艾伦"
+                android:textColor="@color/secondary_text_color"
+                android:textSize="12sp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

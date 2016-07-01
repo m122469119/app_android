@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="57dp"
+              android:gravity="center_vertical"
+              android:orientation="horizontal"
+              android:paddingBottom="5dp"
+              android:paddingTop="5dp">
+    <!--影评人最新的影评layout-->
+
+    <LinearLayout
+        android:layout_width="36dp"
+        android:layout_height="wrap_content"
+        android:background="@color/secondary_list_item"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <com.dym.film.views.CustomTypefaceTextView
+            android:id="@+id/userSharedTimeTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="bottom|right"
+            android:singleLine="true"
+            android:text="12"
+            android:textColor="#606060"
+            android:textSize="14sp"
+            app:customTypeface="number"/>
+
+        <com.dym.film.views.CustomTypefaceTextView
+            android:id="@+id/userSharedTimeUnitTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|right"
+            android:singleLine="true"
+            android:text="分钟前"
+            android:textStyle="bold"
+            android:textColor="#606060"
+            android:textSize="10sp"/>
+    </LinearLayout>
+
+    <com.dym.film.ui.CircleImageView
+        android:id="@+id/opinionImage"
+        android:layout_width="27dp"
+        android:layout_height="27dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/ic_good_movie"/>
+
+    <com.dym.film.views.CustomTypefaceTextView
+        android:id="@+id/contentText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:paddingRight="20dp"
+        android:singleLine="true"
+        android:text="请大家不要错过这部幽默感人的好电影,特别是"
+        android:textColor="@android:color/white"
+        android:textSize="14sp"/>
+</LinearLayout>

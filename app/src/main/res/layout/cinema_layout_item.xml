@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/common_measure_120dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_btn_price_place_pressed_selector"
+        android:layout_weight="1">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/price_line_color" />
+
+
+
+
+        <com.dym.film.views.CustomTypefaceTextView
+            android:id="@+id/cinema_null"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/common_measure_18dp"
+            android:textColor="@color/item_text_gray_color"
+            android:textSize="@dimen/common_measure_40dp"
+            android:textStyle="bold" />
+
+        <com.dym.film.views.CustomTypefaceTextView
+            android:id="@+id/cinema_expandable_tag1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/cinema_null"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/common_measure_13dp"
+            android:text="起"
+            android:textColor="@color/item_text_gray_color"
+            android:textSize="@dimen/common_measure_16dp" />
+
+        <com.dym.film.views.CustomTypefaceTextView
+            android:id="@+id/cinema_expandable_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/common_measure_10dp"
+            android:layout_marginTop="@dimen/common_measure_18dp"
+            android:layout_toLeftOf="@id/cinema_expandable_tag1"
+            android:text="50"
+            android:textColor="@color/item_text_gray_color"
+            android:textSize="@dimen/common_measure_40dp"
+            android:textStyle="bold"
+            app:customTypeface="number" />
+
+        <com.dym.film.views.CustomTypefaceTextView
+            android:id="@+id/cinema_expandable_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/cinema_expandable_number"
+            android:layout_marginRight="@dimen/common_measure_8dp"
+            android:layout_toLeftOf="@id/cinema_expandable_number"
+            android:text="￥"
+            android:textColor="@color/item_text_gray_color"
+            android:textSize="@dimen/common_measure_22dp" />
+
+
+
+
+
+        <com.dym.film.views.CustomTypefaceTextView
+            android:id="@+id/cinema_tv_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/common_measure_24dp"
+            android:layout_marginLeft="@dimen/common_measure_17dp"
+            android:text="万达国际影城"
+            android:layout_toLeftOf="@id/cinema_expandable_tag"
+            android:textColor="@color/white"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:textSize="@dimen/common_measure_21dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/common_measure_13dp"
+            android:layout_below="@id/cinema_tv_name">
+            <com.dym.film.views.CustomTypefaceTextView
+                 android:id="@+id/cinema_expandable_buy_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/common_measure_13dp"
+                android:singleLine="true"
+                android:text="1.2km"
+                android:layout_marginLeft="@dimen/common_measure_80dp"
+                android:textColor="@color/item_text_gray_color"
+                android:textSize="@dimen/common_measure_16dp" />
+            <com.dym.film.views.CustomTypefaceTextView
+                android:id="@+id/cinema_tv_place"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+               android:layout_toLeftOf="@id/cinema_expandable_buy_number"
+                android:maxLines="2"
+                android:layout_marginBottom="@dimen/common_measure_15dp"
+                android:layout_marginLeft="@dimen/common_measure_17dp"
+                android:lineSpacingExtra="1dp"
+                android:ellipsize="end"
+                android:text="杨浦区居高临下9楼杨浦区居高临下9楼杨浦区居高临下9楼杨浦区居高临下9楼杨浦区居高临下9楼杨浦区居高临下9楼杨浦区居高临下9楼杨浦区居高临下9楼杨浦区居高临下9楼杨浦区居高临下9楼杨浦区居高临下9楼杨浦区居高临下9楼杨浦区居高临下9楼"
+                android:textColor="@color/text_color_gray"
+                android:textSize="@dimen/common_measure_16dp" />
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

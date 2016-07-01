@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitCenter"
+        android:src="@drawable/bg_guide03_768"/>
+
+    <LinearLayout
+        android:id="@+id/layGuideAction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:background="#ffffff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="20dp"
+            android:paddingBottom="5dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnToLogin"
+                android:layout_width="140dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/bg_btn_login_shape"
+                android:text="登录"
+                android:textColor="#161c27"/>
+
+            <Button
+                android:id="@+id/btnToRegister"
+                android:layout_width="140dp"
+                android:layout_height="40dp"
+                android:background="#b10b0b"
+                android:text="注册"
+                android:textColor="#ffffff"/>
+        </LinearLayout>
+
+        <com.dym.film.views.CustomTypefaceTextView
+            android:id="@+id/btnToMain"
+            android:background="#ffffff"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="right|center_vertical"
+            android:paddingRight="30dp"
+            android:text="随便看看>"
+            android:textColor="#161c27"/>
+    </LinearLayout>
+
+
+</RelativeLayout>

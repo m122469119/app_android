@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/main_bg_color"
+              android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/layMyBanner"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="@drawable/bg_my_banner"
+        android:onClick="doClick">
+
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:background="@null"
+            android:onClick="doClick"
+            android:padding="12dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_back_arrow_bottom"/>
+
+        <ImageButton
+            android:id="@+id/btnToSetting"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:background="@null"
+            android:onClick="doClick"
+            android:padding="12dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_my_setting"/>
+
+        <FrameLayout
+            android:id="@+id/layPhoto"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp">
+
+            <com.dym.film.ui.CircleImageView
+                android:id="@+id/imgPhoto"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:src="@drawable/ic_default_photo"
+                app:civ_border_color="#dadada"
+                app:civ_border_width="2dp"/>
+
+
+            <View
+                android:id="@+id/viewSex"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_gravity="bottom|right"/>
+        </FrameLayout>
+
+        <com.dym.film.views.CustomTypefaceTextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layPhoto"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text=""
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            />
+
+        <com.dym.film.views.CustomTypefaceTextView
+            android:id="@+id/tvRegisterDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvName"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="3dp"
+            android:text=""
+            android:textColor="@color/item_text_gray_color"
+            android:textSize="14sp"
+            />
+
+        <com.dym.film.views.CustomTypefaceTextView
+            android:id="@+id/tvLoginTips"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_below="@+id/layPhoto"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="@null"
+            android:text="登录/注册"
+            android:textColor="#ffffff"
+            android:textSize="16sp"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/border_color2"/>
+
+    <LinearLayout
+        android:id="@+id/layToMyMsg"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:onClick="doClick"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <com.dym.film.views.CustomTypefaceTextView
+            android:id="@+id/tvMsgCount"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="消息"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            />
+
+        <View
+            android:id="@+id/viewMsgRedCircle"
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/ic_red_circle_shape"
+            android:visibility="invisible"/>
+
+        <View
+            android:layout_width="10dp"
+            android:layout_height="20dp"
+            android:background="@drawable/ic_my_turn_right"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/border_color2"/>
+
+    <LinearLayout
+        android:id="@+id/layToMyAttention"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:onClick="doClick"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <com.dym.film.views.CustomTypefaceTextView
+            android:id="@+id/tvAttentionCount"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="关注的影片/影评人"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            />
+
+        <com.dym.film.ui.CircleImageView
+            android:id="@+id/imgAttentionPhoto"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="10dp"
+            android:src="@null"
+            />
+
+        <View
+            android:layout_width="10dp"
+            android:layout_height="20dp"
+            android:background="@drawable/ic_my_turn_right"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/border_color2"/>
+
+    <LinearLayout
+        android:id="@+id/layToMyTicket"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:onClick="doClick"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:visibility="gone">
+
+        <com.dym.film.views.CustomTypefaceTextView
+            android:id="@+id/tvMyTicketCount"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="我的兑换劵"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            />
+
+        <ImageView
+            android:id="@+id/imgMyTicketSmall"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/ic_launcher"
+            android:visibility="invisible"
+            />
+
+        <View
+            android:layout_width="10dp"
+            android:layout_height="20dp"
+            android:background="@drawable/ic_my_turn_right"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:visibility="gone"
+        android:background="@color/border_color2"/>
+
+    <LinearLayout
+        android:id="@+id/layToMyShareTicket"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:onClick="doClick"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <com.dym.film.views.CustomTypefaceTextView
+            android:id="@+id/tvShareTicketCount"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="我晒"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            />
+
+        <View
+            android:id="@+id/viewShareTicketRedCircle"
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/ic_red_circle_shape"
+            android:visibility="invisible"/>
+
+        <View
+            android:layout_width="10dp"
+            android:layout_height="20dp"
+            android:background="@drawable/ic_my_turn_right"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layThreeShareTicket"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:onClick="doClick"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:weightSum="3">
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/border_color2"/>
+
+    <LinearLayout
+        android:id="@+id/layToFeedback"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:onClick="doClick"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <com.dym.film.views.CustomTypefaceTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="意见反馈"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            />
+
+        <View
+            android:layout_width="10dp"
+            android:layout_height="20dp"
+            android:background="@drawable/ic_my_turn_right"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/border_color2"/>
+
+</LinearLayout>

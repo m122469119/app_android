@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.dym.film.views.CustomTypefaceTextView
+        android:id="@+id/cinema_listtop_used_title"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:textColor="@color/item_text_gray_color"
+        android:paddingLeft="@dimen/common_measure_15dp"
+        android:text="常用影院(1)"
+        android:textSize="@dimen/common_measure_20dp"
+        android:layout_height="@dimen/common_measure_54dp"
+        android:background="@color/cinema_item_backgroudcolor"/>
+    <include layout="@layout/cinema_layout_item"/>
+    <com.dym.film.views.CustomTypefaceTextView
+        android:id="@+id/cinema_listtop_all_title"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:textColor="@color/item_text_gray_color"
+        android:paddingLeft="@dimen/common_measure_15dp"
+        android:text="所有影院(101)"
+        android:textSize="@dimen/common_measure_20dp"
+        android:background="@color/cinema_item_backgroudcolor"
+        android:layout_height="@dimen/common_measure_54dp" />
+</LinearLayout>

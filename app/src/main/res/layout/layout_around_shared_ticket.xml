@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#393939"
+              android:paddingLeft="10dp"
+              android:paddingTop="10dp"
+              android:paddingBottom="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:layout_width="90dp"
+            android:layout_height="90dp">
+
+            <ImageView
+                android:id="@+id/sharedTicketImage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_loading"/>
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+            <com.dym.film.views.CustomTypefaceTextView
+                android:id="@+id/sharedTicketContentText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:maxLines="3"
+                android:text="这是你的，这还是你的，你是我的。。。。这是你的，这还是你的，你是我的。。。。这是你的，这还是你的，你是我的。。。。"
+                android:gravity="top"
+                android:textColor="#B5B5B5"
+                android:textSize="14sp"/>
+
+            <LinearLayout
+                android:layout_weight="0"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/worthButtonImage"
+                        android:layout_width="17dp"
+                        android:layout_height="17dp"
+                        android:src="@drawable/ic_is_worth_white"
+                        android:layout_gravity="bottom|right" />
+
+                    <com.dym.film.views.CustomTypefaceTextView
+                        android:id="@+id/ticketName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:background="@android:color/transparent"
+                        android:gravity="center"
+                        android:text="蚁人"
+                        android:paddingLeft="5dp"
+                        android:singleLine="true"
+                        android:ellipsize="end"
+                        android:textColor="@android:color/white"
+                        android:textSize="15sp"/>
+
+
+                    <com.dym.film.views.CustomTypefaceTextView
+                        android:id="@+id/lengthText"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="100m"
+                        android:gravity="right|center_vertical"
+                        android:textColor="#606060"
+                        android:textSize="13sp"/>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

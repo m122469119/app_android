@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Added By  Liang Ke Jin  2015/11/12-->
+    <color name="dark">#000000</color>
+    <color name="cool_dark">#FF3C3F41</color>
+    <color name="orange">#FD6601</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="red">#ff0000</color>
+    <!-- End-->
+
+    <color name="material_red">#ffF44336</color>
+    <color name="material_green">#ff4CAF50</color>
+    <color name="material_blue">#ff03A9F4</color>
+    <color name="material_yellow">#ffFFEB3B</color>
+
+    <!-- 自定义主题的Colors -->
+    <color name="colorPrimary">#e01b1b</color>
+    <color name="colorPrimaryDark">#e50c0c</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorAppBackground">@color/cool_dark</color>
+
+    <!-- 页面用到的Colors -->
+    <color name="main_title_color">#0f0f0f</color>
+    <color name="main_bg_color">#202020</color>
+    <color name="item_bg_color">#393939</color>
+    <color name="border_color">#565656</color>
+    <color name="border_color2">#383838</color>
+    <color name="red_color">#b10b0b</color>
+    <color name="item_text_gray_color">#b6b6b6</color>
+    <color name="item_text_hint_color">#7e7e7e</color>
+    <color name="vp_tab_normal_color">#2d2d2d</color>
+
+    <!-- 比价Activity   线的颜色-->
+    <color name="price_line_color">#303030</color>
+    <color name="price_linerlayout_backgroudcolor">#151515</color>
+    <color name="price_linerlayout_item_backgroudcolor">#333333</color>
+    <color name="cinema_item_backgroudcolor">#282828</color>
+    <color name="cinema_line_backgroudcolor">#343434</color>
+    <color name="cinema_region_no">#1b1b1b</color>
+    <color name="cinema_region_text_item">#6c6c6c</color>
+    <color name="price_date_bg">#292929</color>
+    <color name="price_place_bg">#181818</color>
+    <color name="price_yellow_text">#f5a623</color>
+    <color name="price_yellow_hint_text">#835d1d</color>
+
+
+    <color name="listview_item_normal">#2d2d2d</color>
+    <color name="listview_item_pressed">#181818</color>
+
+
+    <!-- 透明背景-->
+    <color name="bg_shared_ticket">#88000000</color>
+
+    <color name="number_color">#606060</color>
+    <color name="text_color_gray">#8C8C8C</color>
+    <color name="text_color_gray1">#4a4a4a</color>
+    <color name="secondary_text_color">#B5B5B5</color>
+    <color name="secondary_list_item">#333333</color>
+    <color name="red_bg_color">#B00B0B</color>
+    <color name="film_review_content_text_color">#B3B3B3</color>
+    <color name="fen_ge_line">#565656</color>
+
+    <!-- 电影的tag-->
+    <color name="film_tag_border_color">#989898</color>
+    <color name="film_tag_text_color">#878787</color>
+    <color name="film_name_color">#B6B6B6</color>
+    <color name="from_color">#535353</color>
+</resources>

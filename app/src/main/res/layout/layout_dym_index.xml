@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+    android:visibility="gone">
+
+    <LinearLayout
+        android:id="@+id/layPieChartPhoto"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:visibility="invisible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                >
+
+                <com.dym.film.ui.CircleImageView
+                    android:id="@+id/imgPhoto1"
+                    android:layout_width="80dp"
+                    android:layout_height="75dp"
+                    android:layout_above="@+id/tvName1"
+                    android:paddingLeft="5dp"
+                    android:src="@drawable/ic_default_photo"
+                    app:civ_border_color="#b10b0b"
+                    app:civ_border_width="2dp"/>
+
+                <View
+                    android:id="@+id/viewPraise1"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_above="@+id/tvName1"
+                    android:layout_alignRight="@+id/tvName1"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/ic_good_movie"
+                    />
+
+                <com.dym.film.views.CustomTypefaceTextView
+                    android:id="@+id/tvName1"
+                    android:layout_width="85dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text=""
+                    android:singleLine="true"
+                    android:textColor="@color/item_text_gray_color"
+                    android:textSize="14sp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                >
+
+                <com.dym.film.ui.CircleImageView
+                    android:id="@+id/imgPhoto2"
+                    android:layout_width="80dp"
+                    android:layout_height="75dp"
+                    android:layout_above="@+id/tvName2"
+                    android:paddingLeft="5dp"
+                    android:src="@drawable/ic_default_photo"
+                    app:civ_border_color="#b10b0b"
+                    app:civ_border_width="2dp"/>
+
+                <View
+                    android:id="@+id/viewPraise2"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_above="@+id/tvName2"
+                    android:layout_alignRight="@+id/tvName2"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/ic_good_movie"
+                    />
+
+                <com.dym.film.views.CustomTypefaceTextView
+                    android:id="@+id/tvName2"
+                    android:layout_width="85dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text=""
+                    android:singleLine="true"
+                    android:textColor="@color/item_text_gray_color"
+                    android:textSize="14sp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                >
+
+                <com.dym.film.ui.CircleImageView
+                    android:id="@+id/imgPhoto3"
+                    android:layout_width="80dp"
+                    android:layout_height="75dp"
+                    android:layout_above="@+id/tvName3"
+                    android:paddingLeft="5dp"
+                    android:src="@drawable/ic_default_photo"
+                    app:civ_border_color="#b10b0b"
+                    app:civ_border_width="2dp"/>
+
+                <View
+                    android:id="@+id/viewPraise3"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_above="@+id/tvName3"
+                    android:layout_alignRight="@+id/tvName3"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/ic_good_movie"
+                    />
+
+                <com.dym.film.views.CustomTypefaceTextView
+                    android:id="@+id/tvName3"
+                    android:layout_width="85dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text=""
+                    android:singleLine="true"
+                    android:textColor="@color/item_text_gray_color"
+                    android:textSize="14sp"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                >
+
+                <com.dym.film.ui.CircleImageView
+                    android:id="@+id/imgPhoto4"
+                    android:layout_width="80dp"
+                    android:layout_height="75dp"
+                    android:layout_above="@+id/tvName4"
+                    android:paddingLeft="5dp"
+                    android:src="@drawable/ic_default_photo"
+                    app:civ_border_color="#b10b0b"
+                    app:civ_border_width="2dp"/>
+
+                <View
+                    android:id="@+id/viewPraise4"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_above="@+id/tvName4"
+                    android:layout_alignRight="@+id/tvName4"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/ic_good_movie"
+                    />
+
+                <com.dym.film.views.CustomTypefaceTextView
+                    android:id="@+id/tvName4"
+                    android:layout_width="85dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text=""
+                    android:singleLine="true"
+                    android:textColor="@color/item_text_gray_color"
+                    android:textSize="14sp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                >
+
+                <com.dym.film.ui.CircleImageView
+                    android:id="@+id/imgPhoto5"
+                    android:layout_width="80dp"
+                    android:layout_height="75dp"
+                    android:layout_above="@+id/tvName5"
+                    android:paddingLeft="5dp"
+                    android:src="@drawable/ic_default_photo"
+                    app:civ_border_color="#b10b0b"
+                    app:civ_border_width="2dp"/>
+
+                <View
+                    android:id="@+id/viewPraise5"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_above="@+id/tvName5"
+                    android:layout_alignRight="@+id/tvName5"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/ic_good_movie"
+                    />
+
+                <com.dym.film.views.CustomTypefaceTextView
+                    android:id="@+id/tvName5"
+                    android:layout_width="85dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text=""
+                    android:singleLine="true"
+                    android:textColor="@color/item_text_gray_color"
+                    android:textSize="14sp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+
+                >
+
+                <ImageView
+                    android:id="@+id/imgPhoto6"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="12dp"
+                    android:src="@drawable/ic_dymindex_all"/>
+
+                <com.dym.film.views.CustomTypefaceTextView
+                    android:id="@+id/tvName6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="35dp"
+                    android:text="0"
+                    android:textColor="@color/item_text_gray_color"
+                    android:textSize="25sp"
+                    app:customTypeface="number"/>
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/layPieChartTips"
+        android:visibility="invisible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:padding="10dp"
+        android:orientation="vertical">
+        <com.dym.film.views.CustomTypefaceTextView
+            android:id="@+id/tvPieChartTips"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="暂无足够的专家影评，敬请期待！"
+            android:lineSpacingExtra="5dp"
+            android:gravity="center"
+            android:textColor="@color/item_text_gray_color"
+            android:textSize="16sp"/>
+        <com.dym.film.views.CustomTypefaceTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_marginTop="5dp"
+            android:gravity="right"
+            android:textColor="@color/item_text_gray_color"
+            android:textSize="16sp"/>
+    </LinearLayout>
+
+</RelativeLayout>

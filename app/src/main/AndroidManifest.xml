@@ -1,0 +1,583 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest package="com.dym.film"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Modified By  Liang Ke Jin  2015/11/13 配置极光推送 -->
+    <permission
+        android:name="com.dym.film.permission.JPUSH_MESSAGE"
+        android:protectionLevel="signature"/>
+
+    <uses-permission android:name="com.dym.film.permission.JPUSH_MESSAGE"/>
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+
+    <!-- End -->
+    <application
+        android:name=".application.MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:persistent="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="56821e94e0f55a3861002006"/>
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="${value}"/>
+
+        <activity
+            android:name=".activity.base.SplashActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppLancherTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <receiver android:name=".receiver.BootReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+
+                <category android:name="android.intent.category.HOME"/>
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".activity.MainActivity"
+            android:configChanges="orientation|screenSize"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".activity.mine.LoginActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/JK.SwipeBack.Transparent.Theme">
+        </activity>
+        <activity
+            android:name=".activity.mine.RegisterActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/JK.SwipeBack.Transparent.Theme"
+            android:windowSoftInputMode="stateVisible">
+        </activity>
+        <activity
+            android:name=".activity.mine.Register2Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/JK.SwipeBack.Transparent.Theme"
+            android:windowSoftInputMode="stateVisible">
+        </activity>
+        <activity
+            android:name=".activity.mine.SetRegVCodeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/JK.SwipeBack.Transparent.Theme"
+            android:windowSoftInputMode="stateVisible">
+        </activity>
+        <activity
+            android:name=".activity.mine.SetRegPwdActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/JK.SwipeBack.Transparent.Theme"
+            android:windowSoftInputMode="stateVisible">
+        </activity>
+        <activity
+            android:name=".activity.mine.FeedBackActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/JK.SwipeBack.Transparent.Theme"
+            android:windowSoftInputMode="stateVisible">
+        </activity>
+        <activity
+            android:name=".activity.mine.MyAttentionActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/JK.SwipeBack.Transparent.Theme">
+        </activity>
+        <activity
+            android:name=".activity.mine.MySetActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/JK.SwipeBack.Transparent.Theme">
+        </activity>
+        <activity
+            android:name=".activity.mine.MyMainActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/JK.SwipeBack.Transparent.Theme">
+        </activity>
+        <activity
+            android:name=".activity.mine.ProtocolActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/JK.SwipeBack.Transparent.Theme">
+        </activity>
+        <activity
+            android:name=".activity.mine.MyTicketActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/JK.SwipeBack.Transparent.Theme">
+        </activity>
+        <activity
+            android:name=".activity.mine.TicketDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/JK.SwipeBack.Transparent.Theme">
+        </activity>
+        <activity
+            android:name=".activity.mine.MyShareTicketActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/JK.SwipeBack.Transparent.Theme">
+        </activity>
+        <activity
+            android:name=".activity.mine.MyShareTicketImageActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/JK.SwipeBack.Transparent.Theme">
+        </activity>
+        <activity
+            android:name=".activity.mine.UpdatePwdActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/JK.SwipeBack.Transparent.Theme"
+            android:windowSoftInputMode="stateVisible">
+        </activity>
+        <activity
+            android:name=".activity.mine.UpdatePwd2Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/JK.SwipeBack.Transparent.Theme"
+            android:windowSoftInputMode="stateVisible">
+        </activity>
+        <activity
+            android:name=".activity.mine.SetNewPwdActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/JK.SwipeBack.Transparent.Theme"
+            android:windowSoftInputMode="stateVisible">
+        </activity>
+        <activity
+            android:name=".activity.mine.SetUpdatePwdVCodeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/JK.SwipeBack.Transparent.Theme"
+            android:windowSoftInputMode="stateVisible">
+        </activity>
+        <activity
+            android:name=".activity.home.FilmDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/JK.SwipeBack.Transparent.Theme">
+        </activity>
+        <activity
+            android:name=".activity.home.VideoPlayerActivity"
+            android:screenOrientation="landscape">
+        </activity>
+        <activity
+            android:name=".activity.home.FilmHotListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/JK.SwipeBack.Transparent.Theme">
+        </activity>
+        <activity
+            android:name=".activity.home.FilmRankingActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/JK.SwipeBack.Transparent.Theme">
+        </activity>
+        <activity
+            android:name=".activity.home.FilmRanking2Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/JK.SwipeBack.Transparent.Theme">
+        </activity>
+        <activity
+            android:name=".activity.home.FilmBigPostActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/JK.SwipeBack.Transparent.Theme">
+        </activity>
+        <activity
+            android:name=".activity.home.SingleFilmReviewActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/JK.SwipeBack.Transparent.Theme">
+        </activity>
+        <activity
+            android:name=".activity.home.FilmHotDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/JK.SwipeBack.Transparent.Theme">
+        </activity>
+        <activity
+            android:name=".activity.home.FilmPostActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/JK.SwipeBack.Transparent.Theme">
+        </activity>
+        <activity
+            android:name=".activity.home.FilmVideoActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/JK.SwipeBack.Transparent.Theme">
+        </activity>
+
+        <activity
+            android:name=".activity.HtmlActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/WebTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+
+                <!-- id, action, imageUrl, title -->
+                <data
+                    android:host="hotpot"
+                    android:scheme="dymfilm"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.home.PreFilmDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/JK.SwipeBack.Transparent.Theme">
+        </activity>
+        <!-- Added By  Liang Ke Jin  2015/11/12 -->
+
+
+        <!-- Added By  Liang Ke Jin  2015/11/18 配置百度ApiKey -->
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":DYMService">
+        </service>
+
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="m6dGYZmNdgVmLpZLWPhcVLpq"/>
+        <!-- End -->
+
+
+        <!-- Added By  Liang Ke Jin  2015/11/13 配置极光推送 -->
+        <!-- Required SDK核心功能 -->
+        <activity
+            android:name="cn.jpush.android.ui.PushActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:exported="false"
+            android:theme="@style/JK.SwipeBack.Transparent.Theme">
+            <intent-filter>
+                <action android:name="cn.jpush.android.ui.PushActivity"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="com.dym.film"/>
+            </intent-filter>
+        </activity>
+
+        <!-- Required SDK核心功能 -->
+        <service
+            android:name="cn.jpush.android.service.DownloadService"
+            android:enabled="true"
+            android:exported="false">
+        </service>
+
+        <!-- Required SDK 核心功能 -->
+        <!-- option since 2.0.5 可配置PushService，DaemonService,PushReceiver,AlarmReceiver的android:process参数 将JPush相关组件设置为一个独立进程 -->
+        <!-- 如：android:process=":remote" -->
+        <service
+            android:name="cn.jpush.android.service.PushService"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTER"/>
+                <action android:name="cn.jpush.android.intent.REPORT"/>
+                <action android:name="cn.jpush.android.intent.PushService"/>
+                <action android:name="cn.jpush.android.intent.PUSH_TIME"/>
+            </intent-filter>
+        </service>
+
+        <!-- Required SDK 核心功能 since 1.8.0 -->
+        <service
+            android:name="cn.jpush.android.service.DaemonService"
+            android:enabled="true"
+            android:exported="true"
+            android:process=":DYMService">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.DaemonService"/>
+
+                <category android:name="com.dym.film"/>
+            </intent-filter>
+        </service>
+
+        <!-- Required SDK核心功能 -->
+        <receiver
+            android:name="cn.jpush.android.service.PushReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter android:priority="1000">
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY"/>
+                <!-- Required 显示通知栏 -->
+                <category android:name="com.dym.film"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT"/>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+            <!-- Optional -->
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED"/>
+                <action android:name="android.intent.action.PACKAGE_REMOVED"/>
+
+                <data android:scheme="package"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT"/>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+            <!-- Optional -->
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED"/>
+                <action android:name="android.intent.action.PACKAGE_REMOVED"/>
+
+                <data android:scheme="package"/>
+            </intent-filter>
+        </receiver>
+
+        <!-- Required SDK核心功能 -->
+        <receiver
+            android:name="cn.jpush.android.service.AlarmReceiver"
+            android:process=":DYMService"/>
+
+        <!-- User defined. 用户自定义的广播接收器 -->
+        <receiver
+            android:name=".receiver.JPushMessageReceiver"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTRATION"/>
+                <!-- Required 用户注册SDK的intent -->
+                <action android:name="cn.jpush.android.intent.UNREGISTRATION"/>
+                <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED"/>
+                <!-- Required 用户接收SDK消息的intent -->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED"/>
+                <!-- Required 用户接收SDK通知栏信息的intent -->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED"/>
+                <!-- Required 用户打开自定义通知栏的intent -->
+                <action android:name="cn.jpush.android.intent.ACTION_RICHPUSH_CALLBACK"/>
+                <!-- Optional 用户接受Rich Push Javascript 回调函数的intent -->
+                <action android:name="cn.jpush.android.intent.CONNECTION"/>
+                <!-- 接收网络变化 连接/断开 since 1.6.3 -->
+                <category android:name="com.dym.film"/>
+            </intent-filter>
+        </receiver>
+
+        <!-- Required . Enable it you can get statistics data with channel -->
+        <meta-data
+            android:name="JPUSH_CHANNEL"
+            android:value="developer-default"/>
+        <meta-data
+            android:name="JPUSH_APPKEY"
+            android:value="d676a20b7ee259da7c16c93b"/>
+         <!--android:value="2c63e9c7aeb31347bea764b4" />-->
+        <!-- </>值来自开发者平台取得的AppKey -->
+
+
+        <!-- End -->
+        <!-- 用户消息Activity -->
+        <activity
+            android:name=".activity.sharedticket.UserMessageActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/JK.SwipeBack.Transparent.Theme">
+        </activity>
+
+        <!-- 所有的影评人的Activity -->
+        <activity
+            android:name=".activity.filmreview.AllCriticActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/JK.SwipeBack.Transparent.Theme">
+        </activity>
+
+        <!-- 影评人的Activity -->
+        <activity
+            android:name=".activity.filmreview.CriticDetailActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/JK.SwipeBack.Transparent.Theme">
+        </activity>
+
+        <!-- 影评详情Activity -->
+        <activity
+            android:name=".activity.filmreview.FilmReviewDetailActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/JK.SwipeBack.Transparent.Theme">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+
+                <!-- stubID, filmID -->
+                <data
+                    android:host="review"
+                    android:scheme="dymfilm"/>
+            </intent-filter>
+        </activity>
+
+        <!-- 周围晒票的Activity -->
+        <activity
+            android:name=".activity.sharedticket.AroundSharedTicketActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/JK.SwipeBack.Transparent.Theme">
+        </activity>
+
+        <!-- 晒票详情的Activity -->
+        <activity
+            android:name=".activity.sharedticket.TagSharedTicketActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/JK.SwipeBack.Transparent.Theme">
+        </activity>
+
+        <!-- 晒票大图浏览 -->
+
+
+        <!-- 晒票分享页面 -->
+        <activity
+            android:name=".activity.sharedticket.TicketShareActivity"
+            android:configChanges="keyboard|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/JK.SwipeBack.Transparent.Theme"
+            android:windowSoftInputMode="adjustResize|stateHidden">
+        </activity>
+        <activity
+            android:name="com.mob.tools.MobUIShell"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:multiprocess="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+
+            <!--
+            	AuthorizeAdapter表示一个继承自cn.sharesdk.framework.authorize.AuthorizeAdapter
+            	的类，这个类可以监听到页面的生命周期，也可以获取授权页面的各种UI控件。
+            	开发者可以通过继承AuthorizeAdapter，重写其方法，并获取各种UI来自定义这个页面的行为。
+            -->
+
+            <meta-data
+                android:name="AuthorizeAdapter"
+                android:value="com.dym.film.adapter.MyAuthorizeAdapter"/>
+            <!-- <meta-data android:name="AuthorizeAdapter" android:value="cn.sharesdk.demo.MyAdapter" /> -->
+            <intent-filter>
+                <data android:scheme="tencent1104965302"/>
+
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+        <!-- 微信分享回调 -->
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:multiprocess="true"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <!-- 调用新浪客户端分享，需要注册的回调activity -->
+        <activity
+            android:name="cn.sharesdk.sina.weibo.SinaActivity"
+            android:multiprocess="true"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.price.PriceActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/JK.SwipeBack.Transparent.Theme">
+        </activity>
+        <activity
+            android:name=".activity.price.PriceActivityNew"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/JK.SwipeBack.Transparent.Theme">
+        </activity>
+        <activity
+            android:name=".activity.price.PriceActivity_New"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/JK.SwipeBack.Transparent.Theme">
+        </activity>
+        <activity
+            android:name=".activity.price.CinemaActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/JK.SwipeBack.Transparent.Theme">
+        </activity>
+        <activity
+            android:name=".activity.price.CinemaActivityNew"
+            android:screenOrientation="portrait"
+            android:theme="@style/JK.SwipeBack.Transparent.Theme">
+        </activity>
+        <activity
+            android:name=".activity.price.VoucherActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/JK.SwipeBack.Transparent.Theme">
+        </activity>
+        <activity
+            android:name=".activity.price.OrderActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/JK.SwipeBack.Transparent.Theme">
+        </activity>
+        <activity
+            android:name=".activity.price.PayOrderActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/JK.SwipeBack.Transparent.Theme">
+        </activity>
+        <activity
+            android:name=".activity.search.SearchActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/JK.SwipeBack.Transparent.Theme">
+        </activity>
+        <activity
+            android:name=".activity.search.SearchResultActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/JK.SwipeBack.Transparent.Theme">
+        </activity>
+        <activity
+            android:name=".activity.search.SearchResultActivityNew"
+            android:screenOrientation="portrait"
+            android:theme="@style/JK.SwipeBack.Transparent.Theme">
+        </activity>
+        <activity
+            android:name=".activity.price.PriceDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/JK.SwipeBack.Transparent.Theme">
+        </activity>
+        <activity
+            android:name=".activity.sharedticket.SharedTicketDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/JK.SwipeBack.Transparent.Theme">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+
+                <!-- id -->
+                <data
+                    android:host="sharedticket"
+                    android:scheme="dymfilm"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.sharedticket.SharedTicketOnlyImageActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/JK.SwipeBack.Transparent.Theme">
+        </activity>
+
+    </application>
+
+</manifest>

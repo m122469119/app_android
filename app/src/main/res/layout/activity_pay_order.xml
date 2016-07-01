@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/main_bg_color">
+    <include
+        layout="@layout/layout_custom_status_bar" />
+    <RelativeLayout
+        android:id="@+id/pay_order_title_relative"
+        android:layout_width="match_parent"
+        android:background="@color/main_title_color"
+        android:layout_height="?attr/actionBarSize">
+
+        <LinearLayout
+            android:id="@+id/pay_order_iv_back"
+            android:layout_width="?attr/actionBarSize"
+            android:layout_height="?attr/actionBarSize"
+            android:onClick="doClick"
+            android:gravity="center">
+            <ImageView
+                android:layout_width="@dimen/common_measure_30dp"
+                android:layout_height="@dimen/common_measure_30dp"
+                android:layout_centerVertical="true"
+                android:scaleType="centerInside"
+                android:src="@drawable/btn_titlebar_back_selector" />
+        </LinearLayout>
+
+        <com.dym.film.views.CustomTypefaceTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:ellipsize="end"
+            android:maxLength="10"
+            android:singleLine="true"
+            android:text="支付订单"
+            android:textColor="@color/white"
+            android:textSize="@dimen/common_measure_24dp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/pay_order_linear"
+        android:layout_below="@id/pay_order_title_relative"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_measure_76dp"
+        android:orientation="horizontal">
+    <com.dym.film.views.CustomTypefaceTextView
+        android:id="@+id/pay_order_des"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/common_measure_76dp"
+        android:layout_centerInParent="true"
+        android:paddingLeft="@dimen/common_measure_15dp"
+        android:gravity="center_vertical"
+        android:singleLine="true"
+        android:text="需要支付￥"
+        android:textColor="@color/item_text_gray_color"
+        android:textSize="@dimen/common_measure_17dp" />
+    <com.dym.film.views.CustomTypefaceTextView
+        android:id="@+id/pay_order_totalPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/common_measure_76dp"
+        android:layout_centerInParent="true"
+        android:gravity="center_vertical"
+        android:singleLine="true"
+        android:text="100"
+        android:textColor="@color/white"
+        android:textSize="@dimen/common_measure_17dp" />
+    <com.dym.film.views.CustomTypefaceTextView
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/common_measure_76dp"
+        android:layout_centerInParent="true"
+        android:gravity="center_vertical"
+        android:singleLine="true"
+        android:text=",请选择支付方式"
+        android:textColor="@color/item_text_gray_color"
+        android:textSize="@dimen/common_measure_17dp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/pay_order_relative"
+        android:layout_below="@id/pay_order_linear"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_measure_65dp"
+        android:onClick="doClick"
+        >
+        <RelativeLayout
+            android:id="@+id/pay_order_select_relative"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           >
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/main_title_color"
+                android:alpha="0.3"
+                />
+            <ImageView
+                android:layout_alignParentRight="true"
+                android:layout_width="@dimen/common_measure_89dp"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:scaleType="centerInside"
+                android:visibility="gone"
+                android:src="@drawable/pay"/>
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/pay_order_zhifubao_iv"
+            android:layout_width="@dimen/common_measure_40dp"
+            android:layout_height="@dimen/common_measure_40dp"
+            android:layout_marginRight="@dimen/common_measure_13dp"
+            android:layout_marginLeft="@dimen/common_measure_13dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/zhifubao_icon"/>
+
+        <com.dym.film.views.CustomTypefaceTextView
+            android:layout_toRightOf="@id/pay_order_zhifubao_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/common_measure_76dp"
+            android:gravity="center_vertical"
+            android:text="支付宝支付"
+            android:textColor="@color/white"
+            android:textSize="@dimen/common_measure_22dp" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/pay_order_relative1"
+        android:layout_below="@id/pay_order_relative"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_measure_65dp"
+        android:onClick="doClick"
+        android:visibility="gone"
+        >
+        <RelativeLayout
+            android:id="@+id/pay_order_select_relative1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/red_color"
+                android:alpha="0.3"
+                />
+            <ImageView
+                android:layout_alignParentRight="true"
+                android:layout_width="@dimen/common_measure_86dp"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/pay"/>
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/pay_order_wechat_iv"
+            android:layout_width="@dimen/common_measure_40dp"
+            android:layout_height="@dimen/common_measure_40dp"
+            android:layout_marginRight="@dimen/common_measure_13dp"
+            android:layout_marginLeft="@dimen/common_measure_13dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/wechat_icon"/>
+
+        <com.dym.film.views.CustomTypefaceTextView
+            android:layout_toRightOf="@id/pay_order_wechat_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/common_measure_76dp"
+            android:gravity="center_vertical"
+            android:text="微信支付"
+            android:textColor="@color/white"
+            android:textSize="@dimen/common_measure_22dp" />
+
+    </RelativeLayout>
+
+    <com.dym.film.views.CustomTypefaceTextView
+        android:id="@+id/pay_comment_order_btn"
+        android:layout_below="@id/pay_order_relative1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_measure_64dp"
+        android:layout_marginTop="@dimen/common_measure_133dp"
+        android:text="确认支付"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:clickable="true"
+        android:onClick="doClick"
+        android:background="@drawable/btn_red_shape_selector"
+        android:layout_marginRight="@dimen/common_measure_54dp"
+        android:layout_marginLeft="@dimen/common_measure_54dp"
+        android:textSize="@dimen/common_measure_22dp" />
+</LinearLayout>

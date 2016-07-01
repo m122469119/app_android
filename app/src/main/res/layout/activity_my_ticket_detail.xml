@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/main_bg_color"
+              android:orientation="vertical">
+    <include
+        layout="@layout/layout_custom_status_bar" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/main_title_color"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/btnProtocolBack"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@null"
+            android:onClick="doClick"
+            android:padding="15dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/btn_titlebar_back_selector"/>
+
+        <com.dym.film.views.CustomTypefaceTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="电影票详情"
+            android:textColor="#ffffff"
+            android:textSize="18sp"/>
+
+        <com.dym.film.views.CustomTypefaceTextView
+            android:id="@+id/btnDelete"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:gravity="center"
+            android:onClick="doClick"
+            android:text="删除"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            android:visibility="invisible"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginTop="10dp"
+                android:background="@color/border_color"/>
+
+            <LinearLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/item_bg_color"
+                android:orientation="horizontal"
+                >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="88dp"
+                    android:gravity="center_vertical|right"
+                    android:orientation="vertical"
+                    android:padding="10dp"
+                    >
+
+                    <com.dym.film.views.CustomTypefaceTextView
+                        android:id="@+id/tvBuyMonth"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="18:30"
+                        android:textColor="#606060"
+                        android:textSize="25sp"
+                        android:textStyle="bold"
+                        app:customTypeface="number"/>
+
+                    <com.dym.film.views.CustomTypefaceTextView
+                        android:id="@+id/tvBuyYear"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="2015-11-11"
+                        android:textColor="#606060"
+                        android:textSize="16sp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="88dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <com.dym.film.views.CustomTypefaceTextView
+                        android:id="@+id/tvTicketName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="电影兑换劵"
+                        android:textColor="@android:color/white"
+                        android:textSize="17sp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <com.dym.film.views.CustomTypefaceTextView
+                            android:id="@+id/tvTicketCount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1张"
+                            android:textColor="@color/item_text_gray_color"
+                            android:textSize="15sp"/>
+
+                        <com.dym.film.views.CustomTypefaceTextView
+                            android:id="@+id/tvAllMoney"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" |￥50"
+                            android:textColor="@color/item_text_gray_color"
+                            android:textSize="15sp"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <com.dym.film.views.CustomTypefaceTextView
+                    android:id="@+id/tvStatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@color/red_color"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:onClick="doClick"
+                    android:padding="13dp"
+                    android:text="兑换"
+                    android:textColor="#ffffff"
+                    />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/border_color"/>
+
+            <com.dym.film.views.CustomTypefaceTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="可兑换的影片"
+                android:textColor="#ffffff"
+                android:textSize="16sp"/>
+
+            <com.dym.film.views.CustomTypefaceTextView
+                android:id="@+id/tvFilmName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textColor="@color/item_text_gray_color"
+                android:textSize="15sp"/>
+
+            <com.dym.film.views.CustomTypefaceTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="兑换须知"
+                android:visibility="gone"
+                android:textColor="#ffffff"
+                android:textSize="16sp"/>
+
+            <com.dym.film.views.CustomTypefaceTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:visibility="gone"
+                android:text="1 本券可兑换指定影片；"
+                android:textColor="@color/item_text_gray_color"
+                android:textSize="15sp"/>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginTop="10dp"
+                android:background="@color/border_color"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/item_bg_color"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:padding="10dp"
+                >
+
+                <com.dym.film.views.CustomTypefaceTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="订单详情"
+                    android:textColor="#ffffff"
+                    android:textSize="16sp"/>
+
+                <com.dym.film.views.CustomTypefaceTextView
+                    android:id="@+id/tvOrderCode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="订单号:123123123123124"
+                    android:textColor="#b6b6b6"
+                    android:textSize="15sp"/>
+
+                <com.dym.film.views.CustomTypefaceTextView
+                    android:id="@+id/tvPayMoney"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="实付金额:"
+                    android:textColor="#b6b6b6"
+                    android:textSize="15sp"/>
+
+                <com.dym.film.views.CustomTypefaceTextView
+                    android:id="@+id/tvBuyTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="购买时间:2015.09.03 10:98"
+                    android:textColor="#b6b6b6"
+                    android:textSize="15sp"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/border_color"/>
+
+            <com.dym.film.views.CustomTypefaceTextView
+                android:id="@+id/btnRefund"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="doClick"
+                android:padding="10dp"
+                android:text="申请退款"
+                android:textColor="#ffffff"
+                android:visibility="gone"
+                android:textSize="18sp"/>
+        </LinearLayout>
+    </ScrollView>
+        <com.dym.film.views.CustomTypefaceTextView
+            android:id="@+id/voucher_pay_btn"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_measure_66dp"
+            android:background="@drawable/btn_red_shape_selector"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="doClick"
+            android:text="立即支付"
+            android:textColor="@color/white"
+            android:layout_alignParentBottom="true"
+            android:textSize="@dimen/common_measure_22dp" />
+    </RelativeLayout>
+</LinearLayout>

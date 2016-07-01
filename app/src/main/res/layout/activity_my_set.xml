@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/main_bg_color"
+              android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/main_title_color"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@null"
+            android:onClick="doClick"
+            android:padding="15dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/btn_titlebar_back_selector"/>
+
+        <com.dym.film.views.CustomTypefaceTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="设置"
+            android:textColor="#ffffff"
+            android:textSize="18sp"/>
+
+        <View
+            android:layout_width="50dp"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginTop="0dp"
+                android:background="@color/border_color"/>
+
+            <LinearLayout
+                android:id="@+id/layAccount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <LinearLayout
+                    android:id="@+id/layToPhoto"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:background="@color/item_bg_color"
+                    android:gravity="center_vertical"
+                    android:onClick="doClick"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <com.dym.film.views.CustomTypefaceTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="头像"
+                        android:textColor="#ffffff"
+                        android:textSize="16sp"
+                        />
+
+                    <com.dym.film.ui.CircleImageView
+                        android:id="@+id/imgPhoto"
+                        android:layout_width="55dp"
+                        android:layout_height="55dp"
+                        android:layout_marginRight="15dp"
+
+                        />
+
+                    <View
+                        android:layout_width="10dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/ic_my_turn_right"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/border_color"/>
+
+                <LinearLayout
+                    android:id="@+id/layToNickName"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/item_bg_color"
+                    android:gravity="center_vertical"
+                    android:onClick="doClick"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <com.dym.film.views.CustomTypefaceTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="昵称"
+                        android:textColor="#ffffff"
+                        android:textSize="16sp"
+                        />
+
+                    <com.dym.film.views.CustomTypefaceTextView
+                        android:id="@+id/tvName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_margin="15dp"
+                        android:gravity="center"
+                        android:text=""
+                        android:textColor="#ffffff"
+                        android:textSize="14sp"
+
+                        />
+
+                    <View
+                        android:layout_width="10dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/ic_my_turn_right"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/border_color"/>
+                <LinearLayout
+                    android:id="@+id/layToSex"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/item_bg_color"
+                    android:gravity="center_vertical"
+                    android:onClick="doClick"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <com.dym.film.views.CustomTypefaceTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="性别"
+                        android:textColor="#ffffff"
+                        android:textSize="16sp"
+                        />
+
+                    <com.dym.film.views.CustomTypefaceTextView
+                       android:id="@+id/tvSex"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_margin="15dp"
+                        android:gravity="center"
+                        android:text="未知"
+                        android:textColor="#ffffff"
+                        android:textSize="14sp"
+
+                        />
+
+                    <View
+                        android:layout_width="10dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/ic_my_turn_right"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/border_color"/>
+                <LinearLayout
+                    android:id="@+id/layToUpdatePwd"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/item_bg_color"
+                    android:gravity="center_vertical"
+                    android:onClick="doClick"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <com.dym.film.views.CustomTypefaceTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="修改密码"
+                        android:textColor="#ffffff"
+                        android:textSize="16sp"
+                        />
+
+                    <com.dym.film.views.CustomTypefaceTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:gravity="center"
+                        android:text=""
+                        android:textColor="#ffffff"
+                        android:textSize="16sp"
+                        />
+
+                    <View
+                        android:layout_width="10dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/ic_my_turn_right"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/border_color"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layToClearCache"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/item_bg_color"
+                android:gravity="center_vertical"
+                android:onClick="doClick"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <com.dym.film.views.CustomTypefaceTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="清除缓存"
+                    android:textColor="#ffffff"
+                    android:textSize="16sp"
+                    />
+
+                <com.dym.film.views.CustomTypefaceTextView
+                    android:id="@+id/tvCacheSize"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_margin="15dp"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="#ffffff"
+                    android:textSize="14sp"
+                    />
+
+                <View
+                    android:layout_width="10dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/ic_my_turn_right"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/border_color"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginTop="10dp"
+                android:background="@color/border_color"/>
+
+            <LinearLayout
+                android:id="@+id/layToHelp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/item_bg_color"
+                android:gravity="center_vertical"
+                android:onClick="doClick"
+                android:visibility="gone"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <com.dym.film.views.CustomTypefaceTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="FAQ"
+                    android:textColor="#ffffff"
+                    android:textSize="16sp"
+                    />
+
+                <View
+                    android:layout_width="10dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/ic_my_turn_right"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:visibility="gone"
+                android:background="@color/border_color"/>
+
+            <LinearLayout
+                android:id="@+id/layToFeedback"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/item_bg_color"
+                android:gravity="center_vertical"
+                android:onClick="doClick"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                android:padding="10dp">
+
+                <com.dym.film.views.CustomTypefaceTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="意见反馈"
+                    android:textColor="#ffffff"
+                    android:textSize="16sp"
+                    />
+
+                <View
+                    android:layout_width="10dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/ic_my_turn_right"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:visibility="gone"
+                android:background="@color/border_color"/>
+
+            <LinearLayout
+                android:id="@+id/layToAboutUs"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/item_bg_color"
+                android:gravity="center_vertical"
+                android:onClick="doClick"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <com.dym.film.views.CustomTypefaceTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="关于我们"
+                    android:textColor="#ffffff"
+                    android:textSize="16sp"
+                    />
+
+                <View
+                    android:layout_width="10dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/ic_my_turn_right"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/border_color"/>
+
+            <LinearLayout
+                android:id="@+id/layToService"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/item_bg_color"
+                android:gravity="center_vertical"
+                android:onClick="doClick"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <com.dym.film.views.CustomTypefaceTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="客服电话"
+                    android:textColor="#ffffff"
+                    android:textSize="16sp"
+                    />
+
+                <com.dym.film.views.CustomTypefaceTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="09:00-18:00"
+                    android:textColor="#b6b6b6"
+                    android:textSize="14sp"
+                    />
+
+                <com.dym.film.views.CustomTypefaceTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginRight="15dp"
+                    android:text="021-52896532"
+                    android:gravity="right"
+                    android:textColor="#ffffff"
+                    android:textSize="14sp"
+                    />
+
+                <View
+                    android:layout_width="10dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/ic_my_turn_right"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/border_color"/>
+
+            <Button
+                android:id="@+id/btnLoginOut"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/btn_red_shape_selector"
+                android:onClick="doClick"
+                android:text="退出登录"
+                android:textColor="#ffffff"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

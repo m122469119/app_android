@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+    android:background="@color/main_bg_color">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/ticketImageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:maxHeight="800dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/ic_loading"
+            android:visibility="visible"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:orientation="horizontal">
+
+            <com.dym.film.ui.CircleImageView
+                android:id="@+id/userHeadImage"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_default_photo"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center_vertical"
+                android:paddingLeft="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="20sp"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="left|center_vertical"
+                        android:orientation="horizontal">
+
+                        <com.dym.film.views.CustomTypefaceTextView
+                            android:id="@+id/userNameTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:ellipsize="end"
+                            android:gravity="center_vertical"
+                            android:layout_marginRight="5dp"
+                            android:singleLine="true"
+                            android:layout_toLeftOf="@id/genderImage"
+                            android:text="李冰冰"
+                            android:textColor="@android:color/white"
+                            android:textSize="12sp"/>
+
+                        <ImageView
+                            android:id="@+id/genderImage"
+                            android:layout_width="10sp"
+                            android:layout_height="match_parent"
+                            android:scaleType="fitCenter"
+                            android:layout_alignParentRight="true"
+                            android:src="@drawable/ic_gender_female"/>
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <include layout="@layout/layout_att_film" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <com.dym.film.views.CustomTypefaceTextView
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:layout_marginBottom="10dp"
+            android:text="这是你的， 你是我的。。。。这是你的， 你是我的。。。。这是你的， 你是我的。。。。这是你的， 你是我的。。。。这是你的， 你是我的。。。。这是你的， 你是我的。。。。这是你的， 你是我的。。。。这是你的， 你是我的。。。。"
+            android:textColor="#989898"
+            android:textSize="12sp"
+            android:visibility="visible"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <include layout="@layout/layout_support"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="#262626"
+        android:orientation="horizontal">
+
+        <com.dym.film.views.CustomTypefaceTextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:paddingLeft="7dp"
+            android:paddingRight="7dp"
+            android:text="评论"
+            android:textColor="#B6B6B6"
+            android:textSize="12sp"/>
+
+        <com.dym.film.views.CustomTypefaceTextView
+            android:id="@+id/commentNumText"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="#B6B6B6"
+            android:textSize="12sp"/>
+    </LinearLayout>
+
+</LinearLayout>

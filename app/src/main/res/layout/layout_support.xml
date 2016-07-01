@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/supportLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="24dp"
+        android:orientation="horizontal">
+        <com.dym.film.views.CustomTypefaceTextView
+            android:id="@+id/pubTime"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="2小时前"
+            android:textSize="10sp"
+            android:textColor="#595959"
+            android:gravity="center_vertical"/>
+        <FrameLayout
+            android:id="@+id/support"
+            android:layout_width="58dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:background="@drawable/bg_shape_support"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/noSup"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:visibility="invisible">
+
+                <ImageView
+                    android:layout_width="13sp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="3dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_not_support" />
+
+                <com.dym.film.views.CustomTypefaceTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:background="@android:color/transparent"
+                    android:gravity="center"
+                    android:text="赞"
+                    android:textColor="#656565"
+                    android:textSize="12sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/hasSup"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:visibility="visible">
+
+                <ImageView
+                    android:layout_width="13sp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="3dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_has_support"/>
+
+                <com.dym.film.views.CustomTypefaceTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:background="@android:color/transparent"
+                    android:gravity="center"
+                    android:text="已赞"
+                    android:textColor="#ff605a"
+                    android:textSize="12sp"/>
+            </LinearLayout>
+        </FrameLayout>
+        <LinearLayout
+            android:id="@+id/commentLayout"
+            android:layout_width="58dp"
+            android:layout_marginLeft="10dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_shape_support"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:visibility="visible">
+
+            <ImageView
+                android:layout_width="13sp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="3dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_comment_count"/>
+
+            <com.dym.film.views.CustomTypefaceTextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:text="评论"
+                android:textColor="#7f7f7f"
+                android:textSize="12sp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <FrameLayout
+        android:id="@+id/avatarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/bg_support_layout"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="5dp"
+            android:paddingTop="15dp">
+
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/ic_has_support"/>
+
+            <GridView
+                android:id="@+id/avatarGrid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingRight="10dp"/>
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

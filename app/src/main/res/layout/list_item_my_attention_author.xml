@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/item_bg_color"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:padding="10dp">
+
+    <com.dym.film.ui.CircleImageView
+        android:id="@+id/imgPhoto"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:src="@drawable/ic_default_photo"
+        app:civ_border_color="#30ffffff"
+        app:civ_border_width="1dp"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="60dp"
+        android:padding="8dp"
+        android:orientation="vertical">
+
+        <com.dym.film.views.CustomTypefaceTextView
+            android:id="@+id/tvUserName"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text=""
+            android:singleLine="true"
+            android:includeFontPadding="false"
+            android:textColor="#ffffff"
+            android:textSize="16sp"/>
+
+        <com.dym.film.views.CustomTypefaceTextView
+            android:id="@+id/tvUserHonor"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:textColor="@color/item_text_gray_color"
+            android:singleLine="true"
+            android:includeFontPadding="false"
+            android:text=""
+            android:gravity="center_vertical"
+            android:textSize="15sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <com.dym.film.views.CustomTypefaceTextView
+            android:id="@+id/tvCinecismNum"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="0"
+            app:customTypeface="number"
+            android:textStyle="bold"
+            android:textColor="#606060"
+            android:gravity="bottom|right"
+            android:textSize="30sp"/>
+
+        <com.dym.film.views.CustomTypefaceTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="篇影评"
+            android:gravity="bottom|right"
+            android:textColor="#606060"
+            android:textSize="12sp"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:wheel="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@drawable/bg_custom_dialog"
+              android:orientation="vertical">
+
+    <com.dym.film.ui.ProgressWheel
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="20dp"
+        wheel:matProg_barColor="#b10b0b"
+        wheel:matProg_circleRadius="50dp"
+        wheel:matProg_fillRadius="false"
+        wheel:matProg_progressIndeterminate="true"/>
+</LinearLayout>

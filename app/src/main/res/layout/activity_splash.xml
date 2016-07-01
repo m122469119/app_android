@@ -1,0 +1,28 @@
+<RelativeLayout android:id="@+id/laySplash"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#00000000">
+    <ImageView
+        android:id="@+id/imgSplash"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="110dp"
+        android:background="@null"
+        android:scaleType="centerCrop"
+        android:src="@null"/>
+
+    <com.dym.film.views.CustomTypefaceTextView
+        android:id="@+id/btnPassSplash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="15dp"
+        android:padding="5dp"
+        android:visibility="invisible"
+        android:text="跳过"
+        android:background="@drawable/bg_btn_pass_shape"
+        android:textColor="#ffffff"
+        android:textSize="12sp"/>
+</RelativeLayout>

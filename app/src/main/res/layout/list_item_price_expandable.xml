@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/price_expandable_toggle_button"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/common_measure_110dp"
+        android:background="@drawable/bg_btn_black_pressed_selector"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.25dp"
+            android:background="@color/price_line_color" />
+
+        <com.dym.film.views.CustomTypefaceTextView
+            android:id="@+id/price_expandable_tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="22:30"
+            android:textColor="@color/item_text_gray_color"
+            android:textSize="@dimen/common_measure_40dp"
+            android:layout_marginTop="@dimen/common_measure_20dp"
+            android:layout_marginLeft="@dimen/common_measure_14dp"
+            app:customTypeface="number"
+            android:textStyle="bold"/>
+
+        <com.dym.film.views.CustomTypefaceTextView
+            android:id="@+id/price_expandable_tv_end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="22:40散场"
+            android:textColor="@color/item_text_hint_color"
+            android:textSize="@dimen/common_measure_17dp"
+            android:layout_marginLeft="@dimen/common_measure_14dp"
+            android:layout_alignBaseline="@id/price_expandable_tv_name"
+            android:layout_toRightOf="@id/price_expandable_tv_name"/>
+
+        <com.dym.film.views.CustomTypefaceTextView
+            android:id="@+id/price_expandable_tv_place"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/price_expandable_tv_name"
+            android:layout_marginTop="@dimen/common_measure_10dp"
+            android:layout_marginLeft="@dimen/common_measure_14dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="22:40散场/国语2D"
+            android:textColor="@color/item_text_gray_color"
+            android:textSize="@dimen/common_measure_17dp" />
+
+
+
+        <com.dym.film.views.CustomTypefaceTextView
+            android:id="@+id/price_expandable_tag1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="起"
+            android:textColor="@color/item_text_gray_color"
+            android:layout_alignParentRight="true"
+            android:layout_alignBaseline="@id/price_expandable_tv_name"
+            android:layout_marginRight="@dimen/common_measure_13dp"
+            android:textSize="@dimen/common_measure_16dp" />
+        <com.dym.film.views.CustomTypefaceTextView
+            android:id="@+id/price_expandable_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="50"
+            android:textColor="@color/item_text_gray_color"
+            android:textSize="@dimen/common_measure_40dp"
+            android:layout_marginTop="@dimen/common_measure_20dp"
+
+            android:layout_toLeftOf="@id/price_expandable_tag1"
+            app:customTypeface="number"
+            android:layout_marginRight="@dimen/common_measure_10dp"
+            android:textStyle="bold"/>
+        <com.dym.film.views.CustomTypefaceTextView
+            android:id="@+id/price_expandable_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="￥"
+            android:textColor="@color/item_text_gray_color"
+            android:layout_alignBaseline="@id/price_expandable_number"
+            android:layout_toLeftOf="@id/price_expandable_number"
+            android:layout_marginRight="@dimen/common_measure_8dp"
+            android:textSize="@dimen/common_measure_22dp" />
+
+        <LinearLayout
+            android:id="@+id/price_expandable_linear_bg"
+            android:layout_width="@dimen/common_measure_80dp"
+            android:layout_height="@dimen/common_measure_35dp"
+            android:orientation="horizontal"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/bg_btn_price_open_close"
+            android:layout_below="@id/price_expandable_number"
+            android:layout_marginRight="@dimen/common_measure_13dp"
+            android:layout_marginTop="@dimen/common_measure_5dp"
+            android:gravity="center_vertical"
+            android:padding="5dp">
+
+            <com.dym.film.views.CustomTypefaceTextView
+                android:id="@+id/price_expandable_buy_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="比价"
+                android:singleLine="true"
+                android:textColor="@color/item_text_gray_color"
+                android:textSize="@dimen/common_measure_17dp" />
+
+            <ImageView
+                android:id="@+id/price_expandable_image"
+                android:layout_marginLeft="5dp"
+                android:layout_width="@dimen/common_measure_25dp"
+                android:layout_height="@dimen/common_measure_23dp"
+                android:src="@drawable/price_expandable_close"/>
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/price_expandable"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/price_linerlayout_backgroudcolor"
+        android:orientation="vertical">
+
+        <com.dym.film.views.StretchedListView
+            android:id="@+id/listview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+
+        <com.dym.film.views.CustomTypefaceTextView
+            android:id="@+id/price_expandable_slider_item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/common_measure_67dp"
+            android:layout_marginLeft="@dimen/common_measure_14dp"
+            android:text="暂无数据"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:visibility="gone"
+            android:textSize="@dimen/common_measure_19dp"
+            />
+
+        <com.dym.film.ui.ProgressWheel
+            android:id="@+id/price_expandable_slider_item_load"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            app:matProg_barColor="#b10b0b"
+            app:matProg_circleRadius="50dp"
+            app:matProg_fillRadius="false"
+            android:visibility="gone"
+            app:matProg_progressIndeterminate="true"/>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:padding="5dp">
+
+    <ImageView
+        android:id="@+id/imgFilmCover"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxHeight="144dp"
+        android:maxWidth="100dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_default_loading_img"
+        >
+    </ImageView>
+
+</FrameLayout>
+

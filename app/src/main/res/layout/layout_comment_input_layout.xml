@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/commentInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="#2B2B2B"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:orientation="horizontal">
+
+            <com.dym.film.views.CustomTypefaceTextView
+                android:id="@+id/cancelButton"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="取消"
+                android:singleLine="true"
+                android:textColor="@color/text_color_gray"
+                android:textSize="14sp"/>
+
+
+            <com.dym.film.views.CustomTypefaceTextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+
+            <com.dym.film.views.CustomTypefaceTextView
+                android:id="@+id/commentButton"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0"
+                android:gravity="center"
+                android:text="发表"
+                android:textColor="@color/text_color_gray"
+                android:textSize="14sp"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#606060"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#424242"
+            android:paddingTop="15dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <com.dym.film.views.CustomTypefaceEditText
+                android:id="@+id/commentRealEdit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:maxEms="512"
+                android:minLines="6"
+                android:maxHeight="200dp"
+                android:gravity="left|top"
+                android:focusable="true"
+                android:scrollbars="vertical"
+                android:focusableInTouchMode="true"
+                android:cursorVisible="true"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:textCursorDrawable="@drawable/ic_cursor"
+                android:background="@android:color/transparent"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:paddingTop="5dp"
+                android:orientation="horizontal">
+
+                <com.dym.film.views.CustomTypefaceTextView
+                    android:id="@+id/textNum"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="right|center_vertical"
+                    android:text="0"
+                    android:textColor="@color/text_color_gray"
+                    android:textSize="13sp"/>
+
+                <com.dym.film.views.CustomTypefaceTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0"
+                    android:gravity="center"
+                    android:text=" / 512"
+                    android:textColor="@color/text_color_gray"
+                    android:textSize="13sp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

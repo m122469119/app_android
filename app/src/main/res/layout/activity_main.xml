@@ -1,0 +1,26 @@
+<LinearLayout android:id="@+id/content"
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <com.dym.film.views.HackyViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:persistentDrawingCache="animation"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_gravity="bottom"
+        android:background="@drawable/ic_down_float_shadow"></View>
+    <com.dym.film.ui.viewpagerindicator.FixPageIndicator
+        android:id="@+id/indicator"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/main_title_color"
+       />
+
+</LinearLayout>

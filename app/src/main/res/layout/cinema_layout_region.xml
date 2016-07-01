@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg_color">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_measure_58dp"
+        android:background="@color/cinema_region_no"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+        <com.dym.film.views.CustomTypefaceTextView
+            android:id="@+id/cinema_tv_region_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:gravity="center_vertical"
+            android:padding="5dp"
+            android:layout_marginLeft="@dimen/common_measure_14dp"
+            android:text="区域不限"
+            android:textColor="@color/red_color"
+            android:background="@drawable/bg_shape_item_cinema_region"
+            android:textSize="@dimen/common_measure_18dp" />
+    </LinearLayout>
+    <GridView
+        android:id="@+id/cinema_girdview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:numColumns="3"
+        android:listSelector="@android:color/transparent"
+        android:verticalSpacing="@dimen/common_measure_10dp"
+        android:layout_marginTop="@dimen/common_measure_10dp"
+        android:layout_marginBottom="@dimen/common_measure_10dp"
+        ></GridView>
+</LinearLayout>

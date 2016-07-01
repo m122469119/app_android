@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/main_bg_color"
+              android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/main_title_color"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@null"
+            android:onClick="doClick"
+            android:padding="15dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/btn_titlebar_back_selector"/>
+
+        <com.dym.film.views.CustomTypefaceTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="验证码"
+            android:textColor="#ffffff"
+            android:textSize="18sp"/>
+
+        <View
+            android:layout_width="50dp"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="20dp"
+        android:background="#404040"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#343434"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/etVcode"
+            android:layout_width="0dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="输入验证码"
+            android:inputType="phone"
+            android:maxLength="4"
+            android:singleLine="true"
+            android:textColor="#ffffff"
+            android:textColorHint="#7e7e7e"
+            android:textSize="16sp"/>
+
+        <com.dym.film.views.CustomTypefaceTextView
+            android:id="@+id/btnGetVcode"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:background="#b10b0b"
+
+            android:onClick="doClick"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="再次获取"
+            android:textColor="#ffffff"
+            android:textSize="16sp"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#404040"/>
+
+
+    <com.dym.film.views.CustomTypefaceTextView
+        android:id="@+id/tvTips"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="16dp"
+        android:text="验证码已发送至188****1234"
+        android:textColor="#9a9a9a"
+        android:textSize="16sp"/>
+
+    <com.dym.film.views.CustomTypefaceTextView
+        android:id="@+id/btnCheckVcode"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn_red_shape_selector"
+        android:onClick="doClick"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="下一步设置密码"
+        android:textColor="#ffffff"
+        android:textSize="16sp"/>
+
+
+</LinearLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:gravity="center_vertical"
+    android:background="@drawable/bg_btn_grey_pressed_selector"
+    android:layout_height="@dimen/common_measure_58dp">
+
+    <ImageView
+        android:layout_width="@dimen/common_measure_25dp"
+        android:layout_height="@dimen/common_measure_25dp"
+        android:layout_marginLeft="@dimen/common_measure_20dp"
+        android:layout_marginRight="@dimen/common_measure_8dp"
+        android:src="@drawable/serch_count_icon"/>
+    <com.dym.film.views.CustomTypefaceTextView
+        android:id="@+id/hot_serch_item_tv"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:text="热门搜索"
+
+        android:textSize="@dimen/common_measure_19dp"/>
+    <ImageView
+        android:id="@+id/serch_item_cancel"
+        android:layout_width="@dimen/common_measure_25dp"
+        android:layout_height="@dimen/common_measure_25dp"
+        android:layout_margin="@dimen/common_measure_20dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/serch_clear_icon"/>
+
+</LinearLayout>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/item_bg_color"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="horizontal">
+
+        <com.dym.film.views.TagTextView
+            android:id="@+id/tvMyShareTicketContent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:maxLines="3"
+            android:lineSpacingExtra="4dp"
+            android:ellipsize="end"
+            android:textColor="@color/item_text_gray_color"
+            android:textSize="15sp"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right|bottom"
+            android:orientation="vertical"
+            >
+            <com.dym.film.views.CustomTypefaceTextView
+                android:id="@+id/tvShareTicketDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/number_color"
+                android:textSize="30sp"
+                app:customTypeface="number"
+                android:textStyle="bold"/>
+
+            <com.dym.film.views.CustomTypefaceTextView
+                android:id="@+id/tvShareTicketDateUnit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/number_color"
+                android:textSize="15sp"/>
+
+            <com.dym.film.views.CustomTypefaceTextView
+                android:id="@+id/tvShareTicketLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/number_color"
+                android:textSize="14sp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_height="225dp">
+        <ImageView
+            android:id="@+id/imgTicket"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_default_loading_img"/>
+        <View
+            android:id="@+id/viewPraise"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="10dp"
+            android:background="@drawable/ic_is_worth_white"/>
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal"
+        >
+        <com.dym.film.views.CustomTypefaceTextView
+            android:id="@+id/tvCommentCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/item_text_gray_color"
+            android:layout_marginRight="10dp"
+            android:textSize="16sp"
+            />
+        <com.dym.film.views.CustomTypefaceTextView
+            android:id="@+id/tvPraiseCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/item_text_gray_color"
+            android:layout_marginRight="35dp"
+            android:textSize="16sp"
+           />
+
+        <com.dym.film.views.CustomTypefaceTextView
+            android:id="@+id/btnShareMySharedTicket"
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:text="分享"
+            android:textColor="@color/item_text_gray_color"
+            android:background="@null"
+            android:textSize="16sp"/>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="1px"/>
+        <com.dym.film.views.CustomTypefaceTextView
+            android:id="@+id/btnDelMySharedTicket"
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:text="删除"
+            android:gravity="right|center_vertical"
+            android:background="@null"
+            android:textColor="@color/item_text_gray_color"
+            android:textSize="16sp"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/border_color"
+       />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:background="@color/main_bg_color"
+        />
+</LinearLayout>
